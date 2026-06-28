@@ -1,0 +1,652 @@
+{
+    "settings": {
+        "title": "Settings",
+        "language": "Language",
+        "theme": "Theme",
+        "account": "Account",
+        "profile": "Profile",
+        "notifications": "Notifications",
+        "privacy": "Privacy",
+        "save": "Save",
+        "cancel": "Cancel",
+        "logout": "Log Out"
+    },
+    "common": {
+        "loading": "Loading...",
+        "error": "An error occurred",
+        "success": "Success",
+        "confirm": "Confirm",
+        "cancel": "Cancel",
+        "close": "Close",
+        "save": "Save",
+        "delete": "Delete",
+        "edit": "Edit",
+        "back": "Back",
+        "user": "User"
+    },
+    "nav": {
+        "home": "Home",
+        "generate": "Generate",
+        "workspace": "Workspace",
+        "settings": "Settings",
+        "pricing": "Pricing",
+        "startCreating": "Start Creating",
+        "login": "Log in",
+        "signup": "Sign up",
+        "logout": "Log Out",
+        "loginTitle": "Login",
+        "loginDescription": "Login to your account",
+        "signupTitle": "Sign Up",
+        "signupDescription": "Create a new account"
+    },
+    "sidebar": {
+        "newProject": "New Project",
+        "noProjectsYet": "No projects yet",
+        "today": "Today",
+        "yesterday": "Yesterday",
+        "previous7Days": "Previous 7 Days",
+        "older": "Older",
+        "credits": "Credits",
+        "settings": "Settings",
+        "supportAgent": "Support Agent",
+        "logout": "Log Out",
+        "deleteProjectTitle": "Delete Project",
+        "deleteProjectDescription": "Are you sure you want to delete this project? This action cannot be undone.",
+        "cancel": "Cancel",
+        "deleting": "Deleting...",
+        "delete": "Delete"
+    },
+    "generatePage": {
+        "heroTitle": "What can I create for you?",
+        "loadingProject": "Loading project...",
+        "loadingScreen": "Loading...",
+        "newProjectName": "New Project",
+        "untitledProject": "Untitled Project",
+        "projectSaved": "Project Saved!",
+        "exportingMessage": "Project saved and exporting as {quality}...",
+        "generatedContentFallback": "Generated content for {mode}: {message}",
+        "thinking": "Thinking",
+        "fallbacks": {
+            "user": "User",
+            "creator": "Creator"
+        },
+        "errors": {
+            "createProjectFailed": "Failed to create project. Please check your connection and try again."
+        },
+        "thinkingTooltipOn": "Agent mode on",
+        "thinkingTooltipOff": "Direct mode",
+        "modes": {
+            "image": "Image",
+            "video": "Video",
+            "audio": "Audio",
+            "edit": "Edit"
+        },
+        "saveStatus": {
+            "saving": "Saving...",
+            "saved": "Saved",
+            "failed": "Save failed",
+            "unsaved": "Unsaved"
+        },
+        "suggestedPrompts": {
+            "image": ["Cinematic movie poster for a sci-fi thriller", "Film noir style character portrait", "Storyboard frame for an action sequence", "Concept art for a fantasy film set"],
+            "video": ["Cinematic aerial shot of a city at dusk", "Dramatic slow-motion walking scene", "Movie trailer style montage sequence", "Cinematic interview lighting setup"],
+            "audio": ["Epic cinematic trailer music", "Tense thriller background score", "Movie dialogue ambient room tone", "Action scene sound design effects"],
+            "default": ["Create a cinematic trailer for my film", "Generate concept art for my movie scene", "Compose background score for my short film", "Edit my footage with cinematic color grading"]
+        },
+        "inputPlaceholders": {
+            "image": ["Generate a cyberpunk city illustration", "Create a modern logo design", "A photorealistic portrait of an astronaut", "Concept art for a fantasy landscape", "Oil painting of a sunset over the ocean"],
+            "video": ["Generate a cinematic intro video", "Create a slow-motion nature clip", "Animate a character walking", "Drone footage of a mountain range", "Time-lapse of a busy city street"],
+            "audio": ["Compose a Lo-fi study beat", "Generate futuristic sound effects", "Create a piano melody for a sad scene", "Produce an upbeat pop track", "Voiceover narration for a documentary"],
+            "edit": ["Add subtitles to this video", "Remove background noise", "Color grade this footage", "Trim the silent parts", "Add a transition effect"],
+            "default": ["Generate a cyberpunk-style intro video", "Create a Lo-fi background music track", "Convert this clip to 3D animation", "Edit this travel vlog for me", "Generate a surrealist painting"]
+        }
+    },
+    "hero": {
+        "title": "AI agent for brand content ",
+        "highlightText": "production",
+        "description": "Create on-brand videos and marketing assets at scale with AI-powered workflows.",
+        "buttonText": "Start Creating Now",
+        "loading": "Generating..."
+    },
+    "footer": {
+        "emailPlaceholder": "Enter your email",
+        "subscribe": "Subscribe",
+        "followUs": "Follow Us",
+        "product": "Product",
+        "pricing": "Pricing",
+        "tutorials": "Tutorials",
+        "aboutUs": "About Us",
+        "careers": "Careers",
+        "copyright": "© {year} Ai Art. All rights reserved.",
+        "privacyPolicy": "Privacy Policy",
+        "termsOfService": "Terms of Service",
+        "cookiePolicy": "Cookie Policy"
+    },
+    "auth": {
+        "welcome": "Welcome",
+        "signInDescription": "Sign in or create an account to continue",
+        "continueWithGoogle": "Continue with Google",
+        "continueWithX": "Continue with X",
+        "termsAgreement": "By clicking continue, you agree to our {termsLink} and {privacyLink}.",
+        "termsOfService": "Terms of Service",
+        "privacyPolicy": "Privacy Policy"
+    },
+    "assetsPanel": {
+        "title": "Project Assets",
+        "images": "Images",
+        "videos": "Videos",
+        "audio": "Audio",
+        "noImages": "No images yet",
+        "noVideos": "No videos yet",
+        "noAudio": "No audio yet",
+        "hint": "Generated assets will appear here",
+        "footer": "Click on an asset to insert it into the timeline or chat"
+    },
+    "errors": {
+        "uploadFailed": "Upload failed",
+        "fileTooLarge": "File \"{name}\" is too large. Please upload a smaller file.",
+        "genericError": "An error occurred. Please try again.",
+        "failedToFetch": "Failed to fetch data",
+        "paymentFailed": "Payment initialization failed. Please try again.",
+        "upgradeFailed": "Upgrade failed. Please try again.",
+        "verificationFailed": "Verification failed. Please try again.",
+        "rateLimitExceeded": "Daily limit exceeded. Come back tomorrow!",
+        "serverBusy": "Server is busy. Please try again later.",
+        "analysisFailed": "Analysis failed. Please try again."
+    },
+    "agent": {
+        "manualMode": "Manual Mode",
+        "loadingConversation": "Loading conversation...",
+        "greeting": {
+            "morning": "Good Morning",
+            "afternoon": "Good Afternoon",
+            "evening": "Good Evening",
+            "night": "Good Night"
+        },
+        "intro": {
+            "line1": "I'm MoreU Director, your AI video assistant.",
+            "line2": "How can I help you today?"
+        },
+        "upload": {
+            "selectedCount": "{count} selected, click to add more",
+            "dropzoneTitle": "Drag & drop or click to upload images",
+            "dropzoneHint": "Supports JPG, PNG, MP4, etc.",
+            "submit": "Submit"
+        },
+        "common": {
+            "confirm": "Confirm",
+            "yes": "Yes",
+            "no": "No"
+        },
+        "fieldInput": {
+            "maxItemsAllowed": "Maximum {count} items allowed",
+            "selectedCount": "{selected}/{total} selected",
+            "minItems": "Min {min} items",
+            "maxItems": "Max {max} items",
+            "minMaxItems": "Min {min} • Max {max} items"
+        },
+        "retryGeneration": "AI generation failed, click to retry",
+        "scriptConfirmation": {
+            "generatingTitle": "Generating storyboard images...",
+            "generatingDescription": "AI is generating images for each scene, please wait",
+            "back": "Back",
+            "confirmedCount": "{confirmed} / {total} confirmed",
+            "confirmAndGenerate": "Confirm & Generate Storyboard",
+            "title": "Confirm Script Content",
+            "description": "Please confirm the script description for each scene",
+            "save": "Save",
+            "cancel": "Cancel",
+            "edit": "Edit",
+            "confirmed": "Confirmed",
+            "confirm": "Confirm",
+            "addScene": "Add Scene",
+            "goBackTitle": "Go back to previous step?",
+            "goBackDescription": "Going back will clear the current script content and conversation history. This action cannot be undone.",
+            "goBack": "Go Back"
+        },
+        "styleSelector": {
+            "preview": "Preview",
+            "confirmAndGenerate": "Confirm Style & Generate Script",
+            "back": "Back",
+            "title": "Select Video Style",
+            "description": "Choose the video style that best fits your brand"
+        },
+        "stylePresets": {
+            "cinematic": {
+                "title": "Cinematic",
+                "description": "Deep depth of field, cinematic tones, ideal for brand image"
+            },
+            "lifestyle": {
+                "title": "Lifestyle",
+                "description": "Natural light, authentic scenes, close to daily life"
+            },
+            "minimalist": {
+                "title": "Minimalist",
+                "description": "Clean background, product close-up, highlights quality"
+            },
+            "dynamic": {
+                "title": "Dynamic",
+                "description": "Fast-paced editing, dynamic effects, ideal for social media"
+            },
+            "warm": {
+                "title": "Warm & Emotional",
+                "description": "Warm tones, emotional storytelling, touches the heart"
+            },
+            "luxury": {
+                "title": "Luxury",
+                "description": "High contrast, exquisite details, showcases taste"
+            }
+        },
+        "templateGallery": {
+            "select": "Select"
+        },
+        "storyboardMode": {
+            "title": "Storyboard Script",
+            "description": "Click on the text to edit",
+            "previewVideo": "Preview Video",
+            "imagePreview": "Image Preview"
+        },
+        "moreTemplates": {
+            "title": "More Templates",
+            "description": "Choose the video type that suits you"
+        },
+        "videoPreview": {
+            "titleDelayed": "Video generation is taking a bit longer",
+            "titleGenerating": "Generating storyboard videos",
+            "titleConfirm": "Confirm storyboard videos",
+            "titlePrepare": "Prepare storyboard videos",
+            "descriptionDelayed": "Some scenes are still rendering. We'll keep processing them in the background.",
+            "descriptionGenerating": "We're generating a preview video for each confirmed scene.",
+            "descriptionConfirm": "Review each storyboard video and confirm the final set for editing.",
+            "descriptionPrepare": "Confirm the scenes you want to turn into storyboard videos.",
+            "badgeDelayed": "Still processing",
+            "badgeGenerating": "Generating",
+            "confirmAndEdit": "Confirm and continue to edit",
+            "generationFailed": "Video generation failed",
+            "cardTitleDelayed": "Still processing",
+            "cardTitleGenerating": "Generating video",
+            "cardHintDelayed": "This scene is taking longer than usual, but we're still working on it.",
+            "sceneLabel": "Scene {index}",
+            "confirmedCount": "{confirmed} / {total} confirmed",
+            "editPromptPlaceholder": "Enter a new prompt to regenerate this video...",
+            "regenerateVideo": "Regenerate video",
+            "cancel": "Cancel",
+            "actionDelayed": "Queued for retry",
+            "actionGenerating": "Generating now",
+            "actionHintDelayed": "We'll keep trying automatically. You can leave this page safely.",
+            "edit": "Edit",
+            "regen": "Retry",
+            "editPromptTitle": "Edit prompt",
+            "regenerateTitle": "Regenerate",
+            "regenerate": "Regenerate",
+            "confirmed": "Confirmed",
+            "confirmVideo": "Confirm video"
+        },
+        "storyboard": {
+            "preparingVideoTitle": "Preparing to generate video...",
+            "preparingVideoDescription": "Processing data, please wait",
+            "generatingTitle": "Generating storyboard images",
+            "confirmTitle": "Confirm storyboard images",
+            "generatingDescription": "Generating scene {current} of {total}{queuedSuffix}",
+            "queuedSuffix": ", {count} queued next",
+            "confirmDescription": "Please confirm the images for each scene",
+            "generatedCount": "{completed} / {total} generated",
+            "confirmedCount": "{confirmed} / {total} confirmed",
+            "confirmAndContinue": "Confirm & continue",
+            "generationFailed": "Generation failed",
+            "regenerate": "Regenerate",
+            "generatingFirstScene": "Generating first scene...",
+            "generatingScene": "Generating scene {index}...",
+            "startingRender": "Starting the storyboard render",
+            "pleaseWait": "Please wait a moment",
+            "queuedNext": "Queued next",
+            "queued": "Queued...",
+            "sceneLabel": "Scene {index}",
+            "editPromptPlaceholder": "Enter a new prompt to regenerate...",
+            "regen": "Retry",
+            "cancel": "Cancel",
+            "edit": "Edit",
+            "generatingNow": "Generating now",
+            "waitInLine": "Other scenes will wait in line",
+            "editPrompt": "Edit prompt",
+            "editPromptTitle": "Edit prompt",
+            "regenerateTitle": "Regenerate",
+            "confirm": "Confirm"
+        },
+        "steps": {
+            "PROCESSING_START": "Starting your video creation...",
+            "RESOLVING_IMAGES": "Resolving {imageCount, number} image(s)...",
+            "IMAGES_RESOLVED": "Images resolved ({resolvedCount, number} image(s))",
+            "IMAGE_RESOLVE_FAILED": "Image resolution failed: {error}",
+            "ANALYZING_INTENT": "Analyzing creative intent...",
+            "INTENT_ANALYZED": "Intent analyzed: \"{query}\"",
+            "SEARCHING_TEMPLATES": "Searching reference templates...",
+            "TEMPLATES_FOUND": "Found {templateCount, number} reference template(s)",
+            "NO_TEMPLATES": "No matching templates found, using basic mode",
+            "INTENT_EMPTY": "Intent analysis returned no results, continuing...",
+            "RAG_WARNING": "RAG search unsuccessful, using basic mode",
+            "AI_DECIDING": "AI expert is selecting the best solution for you...",
+            "DECISION_COMPLETE": "{expert} has crafted a personalized plan for you",
+            "TASK_CREATED": "Task created, submitting...",
+            "TASK_SUBMITTED": "Task submitted, waiting for render",
+            "ANALYSIS_FAILED": "Analysis failed: {error}",
+            "ERROR": "Error occurred: {error}",
+            "CLARIFICATION_NEEDED": "More information needed: {info}"
+        },
+        "experts": {
+            "CINEMA_EXPERT": "Cinema Expert",
+            "MOTION_EXPERT": "Motion Expert",
+            "REALISTIC_EXPERT": "Realistic Expert",
+            "STYLIZED_EXPERT": "Stylized Expert",
+            "CREATIVE_EXPERT": "Creative Expert",
+            "AI_EXPERT": "AI Expert"
+        },
+        "status": {
+            "thinking": "Analyzing...",
+            "creating": "Creating..."
+        }
+    },
+    "settingsPage": {
+        "tabs": {
+            "account": "Account",
+            "billing": "Billing & Plans",
+            "apiKeys": "API Keys",
+            "notifications": "Notifications",
+            "appearance": "Appearance"
+        },
+        "header": {
+            "description": "Manage your account preferences and plan details.",
+            "comingSoon": "Coming Soon"
+        },
+        "language": {
+            "description": "Choose the language used across your workspace. We'll remember this preference for future visits.",
+            "applying": "Applying",
+            "active": "On",
+            "currentlyUsing": "Currently using {language}"
+        },
+        "apiKeys": {
+            "title": "API Keys",
+            "description": "Create and manage API keys for developer access.",
+            "nameLabel": "Key Name",
+            "namePlaceholder": "General API Key",
+            "listTitle": "Active Keys",
+            "listDescription": "Delete keys you no longer want to keep around.",
+            "emptyTitle": "No API keys yet",
+            "projectAccessLabel": "Project Access",
+            "expirationLabel": "Expiration",
+            "helper": "New keys are created with the general preset and access to all projects.",
+            "create": "Create API Key",
+            "creating": "Creating...",
+            "formDescription": "Create a developer key for server-side integrations and internal tools.",
+            "createdTitle": "API Key Created",
+            "createdDescription": "Copy and store this key somewhere safe before closing this window.",
+            "shownOnce": "This key is only shown once.",
+            "copy": "Copy",
+            "copied": "Copied",
+            "delete": "Delete",
+            "done": "Done",
+            "docsCta": "Read API docs",
+            "deleteTitle": "Delete API Key",
+            "deleteDescription": "Delete {name} from your workspace. Requests using this key will stop working immediately.",
+            "empty": "No API keys yet.",
+            "allProjects": "All projects",
+            "selectedProjects": "Selected projects",
+            "columns": {
+                "name": "Name",
+                "prefix": "Prefix",
+                "access": "Access",
+                "expires": "Expires",
+                "lastUsed": "Last Used",
+                "status": "Status",
+                "actions": "Actions"
+            },
+            "preset": {
+                "general": "General API"
+            },
+            "expiration": {
+                "never": "Never",
+                "days7": "7 days",
+                "days30": "30 days",
+                "days90": "90 days",
+                "custom": "Custom date"
+            },
+            "status": {
+                "active": "Active",
+                "expired": "Expired",
+                "revoked": "Revoked"
+            },
+            "common": {
+                "never": "Never"
+            },
+            "messages": {
+                "nameRequired": "Please enter a key name.",
+                "projectRequired": "Please select at least one project.",
+                "loadFailed": "Failed to load API keys.",
+                "createFailed": "Failed to create API key.",
+                "copySuccess": "API key copied.",
+                "copyFailed": "Couldn't copy the API key.",
+                "deleteFailed": "Failed to delete API key.",
+                "deleteSuccess": "API key deleted.",
+                "deleteConfirm": "Delete this API key? This action cannot be undone."
+            }
+        },
+        "account": {
+            "displayName": "Display Name",
+            "displayNamePlaceholder": "Your display name",
+            "bio": "Bio",
+            "bioPlaceholder": "Write a short bio...",
+            "connectedAccounts": "Connected Accounts",
+            "connected": "Connected",
+            "notConnected": "Not connected",
+            "connect": "Connect",
+            "phoneVerification": "Phone Verification",
+            "verified": "Verified",
+            "reverify": "Re-verify",
+            "phonePlaceholder": "912 345 678",
+            "verify": "Verify",
+            "phoneVerifiedHint": "Your phone number has been verified.",
+            "phoneHint": "Verify your phone number to unlock additional features.",
+            "invitationCode": "My Invitation Code",
+            "copy": "Copy",
+            "invitationHint": "Share this code with friends to earn rewards.",
+            "saving": "Saving...",
+            "saveChanges": "Save Changes",
+            "dangerZone": "Danger Zone",
+            "deleteAccount": "Delete Account",
+            "deleteDescription": "Permanently remove your account and all of its content.",
+            "changeAvatar": "Change Avatar",
+            "uploading": "Uploading...",
+            "removeAvatar": "Remove"
+        },
+        "billing": {
+            "currentPlan": "Current Plan",
+            "youAreOn": "You are currently on the",
+            "planSuffix": "Plan",
+            "cancelled": "Cancelled",
+            "active": "Active",
+            "endsOn": "Ends on",
+            "nextBillingDate": "Next billing date",
+            "credits": "Credits",
+            "used": "{percent}% used",
+            "cancelledNotice": "Your subscription has been cancelled and will end on {date}. You can resubscribe anytime from the pricing page.",
+            "manageSubscription": "Manage Subscription",
+            "upgradePlan": "Upgrade Plan",
+            "cancelTitle": "Cancel Subscription?",
+            "cancelDescription": "Your subscription will remain active until the end of your current billing period. After that, you'll lose access to premium features and your plan will revert to Free.",
+            "keepSubscription": "Keep Subscription",
+            "cancelling": "Cancelling...",
+            "confirmCancel": "Yes, Cancel",
+            "orderHistory": "Order History",
+            "retry": "Retry",
+            "noOrders": "No orders yet"
+        },
+        "notifications": {
+            "email": "Email Notifications",
+            "emailDescription": "Receive emails about your account activity.",
+            "marketing": "Marketing Emails",
+            "marketingDescription": "Receive emails about new features and offers.",
+            "projectUpdates": "Project Updates",
+            "projectUpdatesDescription": "Get notified when your project finishes generating."
+        },
+        "appearance": {
+            "light": "Light",
+            "dark": "Dark",
+            "system": "System"
+        },
+        "phoneModal": {
+            "title": "Verify Phone Number",
+            "description": "Enter the 6-digit code sent to {phone}",
+            "resend": "Resend Code"
+        },
+        "plans": {
+            "free": "Free",
+            "starter": "Starter",
+            "professional": "Professional",
+            "business": "Business",
+            "plus": "Plus"
+        },
+        "common": {
+            "na": "N/A"
+        },
+        "messages": {
+            "phoneRequired": "Please enter a phone number",
+            "phoneFormat": "Phone number must be in E.164 format (e.g., +886912345678)",
+            "phoneDifferent": "Please enter a different phone number",
+            "sendCodeFailed": "Failed to send verification code",
+            "genericRetry": "An error occurred. Please try again.",
+            "codeIncomplete": "Please enter the complete 6-digit code",
+            "verificationFailed": "Verification failed",
+            "saveProfileFailed": "Failed to save profile",
+            "uploadImageType": "Please upload an image file (JPG, PNG)",
+            "uploadImageSize": "Image size must be less than 5MB",
+            "imageIdFailed": "Failed to get image ID from server",
+            "uploadImageFailed": "Failed to upload image",
+            "uploadImageError": "Error uploading image",
+            "fetchOrdersFailed": "Failed to fetch orders",
+            "loadOrdersFailed": "Failed to load orders",
+            "cancelSubscriptionFailed": "Failed to cancel subscription",
+            "cancelSubscriptionRetry": "Failed to cancel subscription. Please try again.",
+            "receiptFailed": "Failed to get receipt",
+            "receiptUnavailable": "Receipt not available",
+            "receiptOpenFailed": "Failed to open receipt",
+            "invoiceUnavailable": "No invoice available",
+            "connectGoogleFailed": "Failed to connect Google account",
+            "connectXFailed": "Failed to connect X account",
+            "accountConflict": "This account is already linked to another user",
+            "bindingFailed": "Failed to link account. Please try again.",
+            "profileSaved": "Profile saved successfully!",
+            "codeCopied": "Code copied to clipboard!"
+        }
+    },
+    "pricingPage": {
+        "heading": "Pricing",
+        "description": "Check out our affordable pricing plans",
+        "billing": {
+            "monthly": "Monthly",
+            "yearly": "Yearly",
+            "yearlySavings": "Save 10% with yearly billing",
+            "freeForever": "Free forever",
+            "billedAnnually": "Billed {amount} annually"
+        },
+        "actions": {
+            "current": "Current",
+            "currentPlan": "Current Plan",
+            "getStarted": "Get Started",
+            "upgrade": "Upgrade",
+            "purchase": "Purchase",
+            "contactUs": "Contact Us"
+        },
+        "plans": {
+            "free": {
+                "name": "Free",
+                "description": "Perfect for exploring AI creation",
+                "features": {
+                    "points": "50 Points / mo",
+                    "output": "25 Images or 3 Videos",
+                    "speed": "Standard Speed",
+                    "gallery": "Public Gallery",
+                    "license": "CC-BY-NC License"
+                }
+            },
+            "starter": {
+                "name": "Starter",
+                "description": "For creators getting serious",
+                "compareText": "Everything in Free, and:",
+                "features": {
+                    "points": "630 Points / mo",
+                    "output": "315 Images or 45 Videos",
+                    "speed": "Fast Generation Speed",
+                    "gallery": "Private Gallery",
+                    "license": "Commercial License"
+                }
+            },
+            "professional": {
+                "name": "Professional",
+                "description": "Power and flexibility for pros",
+                "compareText": "Everything in Starter, and:",
+                "features": {
+                    "points": "4,900 Points / mo",
+                    "output": "2,450 Images or 350 Videos",
+                    "speed": "Turbo Speed",
+                    "support": "Priority Support",
+                    "license": "Commercial License"
+                }
+            },
+            "business": {
+                "name": "Business",
+                "description": "Collaborate and scale with your team",
+                "compareText": "Everything in Professional, and:",
+                "features": {
+                    "points": "13,300 Points / mo",
+                    "output": "6,650 Images or 950 Videos",
+                    "team": "5 Team Members",
+                    "workspace": "Shared Workspace",
+                    "api": "API Access"
+                }
+            }
+        },
+        "messages": {
+            "upgradeSuccess": "Subscription upgraded successfully!",
+            "upgradeFailed": "Upgrade failed",
+            "upgradeRetry": "Upgrade failed. Please try again.",
+            "checkoutFailed": "Failed to create checkout session",
+            "paymentFailed": "Payment initialization failed. Please try again.",
+            "genericRetry": "An error occurred. Please try again."
+        }
+    },
+    "verifyPhonePage": {
+        "header": {
+            "phoneTitle": "Verify Your Phone",
+            "otpTitle": "Enter Verification Code",
+            "phoneDescription": "Verify your phone number to unlock additional features.",
+            "otpDescription": "We've sent a 6-digit code to {phone}."
+        },
+        "form": {
+            "phoneLabel": "Phone Number",
+            "phoneHint": "Enter your phone number without country code",
+            "inviteLabel": "Invitation Code",
+            "invitePlaceholder": "Enter invitation code",
+            "otpLabel": "Verification Code"
+        },
+        "actions": {
+            "sendCode": "Send Verification Code",
+            "sending": "Sending...",
+            "skip": "Skip for now",
+            "verifyAndContinue": "Verify & Continue",
+            "verifying": "Verifying...",
+            "changeNumber": "Change Number",
+            "resendIn": "Resend in {seconds}s"
+        },
+        "messages": {
+            "sendCodeFailed": "Failed to send verification code. Please try again.",
+            "verificationFailed": "Verification failed. Please try again."
+        },
+        "footer": {
+            "trouble": "Having trouble?",
+            "contactSupport": "Contact Support"
+        },
+        "common": {
+            "optional": "Optional"
+        }
+    }
+}

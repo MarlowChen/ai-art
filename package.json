@@ -1,0 +1,28 @@
+{
+  "name": "nextjs-tailwindcss-typescript",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build",
+    "build:gh-pages": "NEXT_PUBLIC_BASE_PATH=${NEXT_PUBLIC_BASE_PATH:-${GITHUB_PAGES_BASE_PATH:-/testi}} GITHUB_PAGES_BASE_PATH=${GITHUB_PAGES_BASE_PATH:-${NEXT_PUBLIC_BASE_PATH:-/testi}} next build && touch out/.nojekyll",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "^0.10.35",
+    "lucide-react": "^0.487.0",
+    "motion": "^12.23.24",
+    "next": "^16.2.6",
+    "qrcode.react": "^4.2.0",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.0",
+    "@types/node": "^25.0.0",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "tailwindcss": "^4.3.0",
+    "typescript": "^6.0.3"
+  }
+}

@@ -1,0 +1,607 @@
+{
+    "settings": {
+        "title": "設定",
+        "language": "言語",
+        "theme": "テーマ",
+        "account": "アカウント",
+        "profile": "プロフィール",
+        "notifications": "通知",
+        "privacy": "プライバシー",
+        "save": "保存",
+        "cancel": "キャンセル",
+        "logout": "ログアウト"
+    },
+    "common": {
+        "loading": "読み込み中...",
+        "error": "エラーが発生しました",
+        "success": "成功",
+        "confirm": "確認",
+        "cancel": "キャンセル",
+        "close": "閉じる",
+        "save": "保存",
+        "delete": "削除",
+        "edit": "編集",
+        "back": "戻る",
+        "user": "ユーザー"
+    },
+    "nav": {
+        "home": "ホーム",
+        "generate": "生成",
+        "workspace": "ワークスペース",
+        "settings": "設定",
+        "pricing": "料金",
+        "startCreating": "作成を開始",
+        "login": "ログイン",
+        "signup": "新規登録",
+        "logout": "ログアウト",
+        "loginTitle": "ログイン",
+        "loginDescription": "アカウントにログイン",
+        "signupTitle": "新規登録",
+        "signupDescription": "新しいアカウントを作成"
+    },
+    "sidebar": {
+        "newProject": "新しいプロジェクト",
+        "noProjectsYet": "まだプロジェクトがありません",
+        "today": "今日",
+        "yesterday": "昨日",
+        "previous7Days": "過去 7 日間",
+        "older": "それ以前",
+        "credits": "クレジット",
+        "settings": "設定",
+        "supportAgent": "サポートエージェント",
+        "logout": "ログアウト",
+        "deleteProjectTitle": "プロジェクトを削除",
+        "deleteProjectDescription": "このプロジェクトを削除してもよろしいですか？この操作は元に戻せません。",
+        "cancel": "キャンセル",
+        "deleting": "削除中...",
+        "delete": "削除"
+    },
+    "generatePage": {
+        "heroTitle": "何を作成しましょうか？",
+        "loadingProject": "プロジェクトを読み込み中...",
+        "loadingScreen": "読み込み中...",
+        "newProjectName": "新しいプロジェクト",
+        "untitledProject": "無題のプロジェクト",
+        "projectSaved": "プロジェクトを保存しました！",
+        "exportingMessage": "プロジェクトを保存し、{quality} として書き出しています...",
+        "generatedContentFallback": "{mode} 用のコンテンツを生成しました: {message}",
+        "thinking": "思考中",
+        "fallbacks": {
+            "user": "ユーザー",
+            "creator": "クリエイター"
+        },
+        "errors": {
+            "createProjectFailed": "プロジェクトの作成に失敗しました。接続を確認してもう一度お試しください。"
+        },
+        "thinkingTooltipOn": "エージェントモードが有効です",
+        "thinkingTooltipOff": "ダイレクトモード",
+        "modes": {
+            "image": "画像",
+            "video": "動画",
+            "audio": "音声",
+            "edit": "編集"
+        },
+        "saveStatus": {
+            "saving": "保存中...",
+            "saved": "保存済み",
+            "failed": "保存に失敗しました",
+            "unsaved": "未保存"
+        },
+        "suggestedPrompts": {
+            "image": ["SFスリラー映画のシネマティックポスター", "フィルムノワール風の人物ポートレート", "アクションシーンの絵コンテフレーム", "ファンタジー映画セットのコンセプトアート"],
+            "video": ["夕暮れの街を映すシネマティック空撮", "ドラマチックなスローモーション歩行シーン", "予告編風モンタージュ映像", "映画的なインタビュー照明シーン"],
+            "audio": ["壮大な映画予告編風BGM", "緊張感のあるスリラー背景音楽", "映画の会話用ルームトーン", "アクションシーンのサウンドデザイン"],
+            "default": ["自分の映画のためにシネマティックな予告編を作る", "映画シーンのコンセプトアートを生成する", "短編映画の背景音楽を作曲する", "映像素材をシネマティックにカラーグレーディング編集する"]
+        },
+        "inputPlaceholders": {
+            "image": ["サイバーパンク都市のイラストを生成する", "モダンなロゴデザインを作成する", "宇宙飛行士のフォトリアルな肖像", "ファンタジー風景のコンセプトアート", "海に沈む夕日の油絵"],
+            "video": ["シネマティックなイントロ動画を生成する", "スローモーションの自然映像を作る", "キャラクターが歩くアニメーションを作る", "山脈のドローン映像", "にぎやかな街並みのタイムラプス"],
+            "audio": ["Lo-fi 勉強用ビートを作曲する", "未来的な効果音を生成する", "悲しいシーン向けのピアノメロディを作る", "明るいポップトラックを制作する", "ドキュメンタリー用ナレーションを作る"],
+            "edit": ["この動画に字幕を追加する", "背景ノイズを除去する", "この映像をカラーグレーディングする", "無音部分をトリミングする", "トランジション効果を追加する"],
+            "default": ["サイバーパンク風イントロ動画を生成する", "Lo-fi 背景音楽を作成する", "このクリップを 3D アニメーションに変換する", "この旅行 vlog を編集する", "シュルレアリスム絵画を生成する"]
+        }
+    },
+    "hero": {
+        "title": "ブランドコンテンツ制作向けAI ",
+        "highlightText": "エージェント",
+        "description": "AIを活用したワークフローで、ブランドに沿った動画やマーケティング素材を大規模に制作します。",
+        "buttonText": "今すぐ作成を開始"
+    },
+    "footer": {
+        "emailPlaceholder": "メールアドレスを入力",
+        "subscribe": "登録する",
+        "followUs": "フォローする",
+        "product": "製品",
+        "pricing": "料金",
+        "tutorials": "チュートリアル",
+        "aboutUs": "会社概要",
+        "careers": "採用情報",
+        "copyright": "© {year} Ai Art. All rights reserved.",
+        "privacyPolicy": "プライバシーポリシー",
+        "termsOfService": "利用規約",
+        "cookiePolicy": "Cookieポリシー"
+    },
+    "auth": {
+        "welcome": "ようこそ",
+        "signInDescription": "続行するにはサインインまたはアカウントを作成してください",
+        "continueWithGoogle": "Googleで続行",
+        "continueWithX": "Xで続行",
+        "termsAgreement": "続行をクリックすると、{termsLink}と{privacyLink}に同意したことになります。",
+        "termsOfService": "利用規約",
+        "privacyPolicy": "プライバシーポリシー"
+    },
+    "assetsPanel": {
+        "title": "プロジェクトアセット",
+        "images": "画像",
+        "videos": "動画",
+        "audio": "音楽",
+        "noImages": "画像がありません",
+        "noVideos": "動画がありません",
+        "noAudio": "音楽がありません",
+        "hint": "生成されたアセットはここに表示されます",
+        "footer": "アセットをクリックしてタイムラインまたはチャットに挿入"
+    },
+    "agent": {
+        "manualMode": "手動モード",
+        "loadingConversation": "会話を読み込み中...",
+        "greeting": {
+            "morning": "おはようございます",
+            "afternoon": "こんにちは",
+            "evening": "こんばんは",
+            "night": "こんばんは"
+        },
+        "intro": {
+            "line1": "私は MoreU Director、あなたの AI 動画アシスタントです。",
+            "line2": "今日は何をお手伝いしましょうか？"
+        },
+        "upload": {
+            "selectedCount": "{count} 件を選択済みです。クリックしてさらに追加できます",
+            "dropzoneTitle": "ドラッグ＆ドロップ、またはクリックして画像をアップロード",
+            "dropzoneHint": "JPG、PNG、MP4 などに対応しています",
+            "submit": "送信"
+        },
+        "common": {
+            "confirm": "確認",
+            "yes": "はい",
+            "no": "いいえ"
+        },
+        "fieldInput": {
+            "maxItemsAllowed": "最大 {count} 件までアップロードできます",
+            "selectedCount": "{selected}/{total} 件を選択済み",
+            "minItems": "最小 {min} 件",
+            "maxItems": "最大 {max} 件",
+            "minMaxItems": "最小 {min} 件 • 最大 {max} 件"
+        },
+        "retryGeneration": "AI 生成に失敗しました。クリックして再試行してください",
+        "scriptConfirmation": {
+            "generatingTitle": "絵コンテ画像を生成中...",
+            "generatingDescription": "AI が各シーンの画像を生成しています。しばらくお待ちください",
+            "back": "戻る",
+            "confirmedCount": "{confirmed} / {total} 確認済み",
+            "confirmAndGenerate": "確認して絵コンテを生成",
+            "title": "スクリプト内容を確認",
+            "description": "各シーンのスクリプト説明を確認してください",
+            "save": "保存",
+            "cancel": "キャンセル",
+            "edit": "編集",
+            "confirmed": "確認済み",
+            "confirm": "確認",
+            "addScene": "シーンを追加",
+            "goBackTitle": "前のステップに戻りますか？",
+            "goBackDescription": "戻ると現在のスクリプト内容と会話履歴が削除されます。この操作は元に戻せません。",
+            "goBack": "戻る"
+        },
+        "styleSelector": {
+            "preview": "プレビュー",
+            "confirmAndGenerate": "スタイルを確定してスクリプトを生成",
+            "back": "戻る",
+            "title": "動画スタイルを選択",
+            "description": "ブランドに最も合う動画スタイルを選択してください"
+        },
+        "stylePresets": {
+            "cinematic": {
+                "title": "シネマティック",
+                "description": "深い被写界深度と映画的な色調で、ブランドイメージに最適"
+            },
+            "lifestyle": {
+                "title": "ライフスタイル",
+                "description": "自然光とリアルなシーンで、日常に寄り添う表現"
+            },
+            "minimalist": {
+                "title": "ミニマル",
+                "description": "クリーンな背景と商品クローズアップで質感を引き立てる"
+            },
+            "dynamic": {
+                "title": "ダイナミック",
+                "description": "テンポの速い編集と動きのある演出で SNS 向き"
+            },
+            "warm": {
+                "title": "温かく感情的",
+                "description": "温かい色味と感情的なストーリーで心に響く"
+            },
+            "luxury": {
+                "title": "ラグジュアリー",
+                "description": "高コントラストと繊細なディテールで上質さを表現"
+            }
+        },
+        "templateGallery": {
+            "select": "選択"
+        },
+        "storyboardMode": {
+            "title": "絵コンテスクリプト",
+            "description": "テキストをクリックして編集",
+            "previewVideo": "動画をプレビュー",
+            "imagePreview": "画像プレビュー"
+        },
+        "moreTemplates": {
+            "title": "その他のテンプレート",
+            "description": "自分に合った動画タイプを選択してください"
+        },
+        "videoPreview": {
+            "titleDelayed": "動画生成に少し時間がかかっています",
+            "titleGenerating": "絵コンテ動画を生成中",
+            "titleConfirm": "絵コンテ動画を確認",
+            "titlePrepare": "絵コンテ動画を準備",
+            "descriptionDelayed": "一部のシーンはまだレンダリング中です。バックグラウンドで処理を続けます。",
+            "descriptionGenerating": "確認済みの各シーンについてプレビュー動画を生成しています。",
+            "descriptionConfirm": "各絵コンテ動画を確認し、編集に進む最終セットを確定してください。",
+            "descriptionPrepare": "絵コンテ動画にしたいシーンを先に確認してください。",
+            "badgeDelayed": "引き続き処理中",
+            "badgeGenerating": "生成中",
+            "confirmAndEdit": "確定して編集へ進む",
+            "generationFailed": "動画生成に失敗しました",
+            "cardTitleDelayed": "まだ処理中です",
+            "cardTitleGenerating": "動画を生成中",
+            "cardHintDelayed": "このシーンは通常より時間がかかっていますが、引き続き処理しています。",
+            "sceneLabel": "シーン {index}",
+            "confirmedCount": "{confirmed} / {total} 確認済み",
+            "editPromptPlaceholder": "この動画を再生成する新しいプロンプトを入力してください...",
+            "regenerateVideo": "動画を再生成",
+            "cancel": "キャンセル",
+            "actionDelayed": "再試行待ち",
+            "actionGenerating": "生成中",
+            "actionHintDelayed": "自動的に再試行を続けます。このページを離れても大丈夫です。",
+            "edit": "編集",
+            "regen": "再試行",
+            "editPromptTitle": "プロンプトを編集",
+            "regenerateTitle": "再生成",
+            "regenerate": "再生成",
+            "confirmed": "確認済み",
+            "confirmVideo": "動画を確認"
+        },
+        "storyboard": {
+            "preparingVideoTitle": "動画生成の準備中...",
+            "preparingVideoDescription": "データを処理しています。しばらくお待ちください",
+            "generatingTitle": "絵コンテ画像を生成中",
+            "confirmTitle": "絵コンテ画像を確認",
+            "generatingDescription": "{current} / {total} シーンを生成中{queuedSuffix}",
+            "queuedSuffix": "、あと {count} 件が待機中",
+            "confirmDescription": "各シーンの画像を確認してください",
+            "generatedCount": "{completed} / {total} 生成済み",
+            "confirmedCount": "{confirmed} / {total} 確認済み",
+            "confirmAndContinue": "確認して続行",
+            "generationFailed": "生成に失敗しました",
+            "regenerate": "再生成",
+            "generatingFirstScene": "最初のシーンを生成中...",
+            "generatingScene": "シーン {index} を生成中...",
+            "startingRender": "絵コンテのレンダリングを開始しています",
+            "pleaseWait": "しばらくお待ちください",
+            "queuedNext": "次に待機中",
+            "queued": "待機中...",
+            "sceneLabel": "シーン {index}",
+            "editPromptPlaceholder": "再生成用の新しいプロンプトを入力してください...",
+            "regen": "再試行",
+            "cancel": "キャンセル",
+            "edit": "編集",
+            "generatingNow": "生成中",
+            "waitInLine": "他のシーンは順番に待機します",
+            "editPrompt": "プロンプトを編集",
+            "editPromptTitle": "プロンプトを編集",
+            "regenerateTitle": "再生成",
+            "confirm": "確認"
+        }
+    },
+    "settingsPage": {
+        "tabs": {
+            "account": "アカウント",
+            "billing": "請求とプラン",
+            "apiKeys": "API キー",
+            "notifications": "通知",
+            "appearance": "外観"
+        },
+        "header": {
+            "description": "アカウント設定やプラン情報を管理します。",
+            "comingSoon": "近日公開"
+        },
+        "language": {
+            "description": "ワークスペースで使用する言語を選択してください。この設定は次回以降も保持されます。",
+            "applying": "適用中",
+            "active": "使用中",
+            "currentlyUsing": "現在使用中: {language}"
+        },
+        "apiKeys": {
+            "title": "API キー",
+            "description": "開発者向け API key を作成・管理します。",
+            "nameLabel": "キー名",
+            "namePlaceholder": "一般用途キー",
+            "listTitle": "現在のキー",
+            "listDescription": "不要になった key はそのまま削除できます。",
+            "emptyTitle": "API キーはまだありません",
+            "projectAccessLabel": "プロジェクトアクセス",
+            "expirationLabel": "有効期限",
+            "helper": "新しい key は general preset で作成され、すべてのプロジェクトにアクセスできます。",
+            "create": "API Key を作成",
+            "creating": "作成中...",
+            "formDescription": "サーバー連携や内部ツールで使う開発者 key を作成します。",
+            "createdTitle": "API Key を作成しました",
+            "createdDescription": "このウィンドウを閉じる前に key をコピーして安全に保管してください。",
+            "shownOnce": "この key は一度だけ表示されます。",
+            "copy": "コピー",
+            "copied": "コピー済み",
+            "delete": "削除",
+            "done": "完了",
+            "docsCta": "API ドキュメントを見る",
+            "deleteTitle": "API キーを削除",
+            "deleteDescription": "{name} を削除すると、このキーを使ったリクエストはすぐに無効になります。",
+            "empty": "API キーはまだありません。",
+            "allProjects": "すべてのプロジェクト",
+            "selectedProjects": "選択したプロジェクト",
+            "columns": {
+                "name": "名前",
+                "prefix": "プレフィックス",
+                "access": "アクセス",
+                "expires": "期限",
+                "lastUsed": "最終使用",
+                "status": "状態",
+                "actions": "操作"
+            },
+            "preset": {
+                "general": "General API"
+            },
+            "expiration": {
+                "never": "無期限",
+                "days7": "7日",
+                "days30": "30日",
+                "days90": "90日",
+                "custom": "日時を指定"
+            },
+            "status": {
+                "active": "有効",
+                "expired": "期限切れ",
+                "revoked": "無効"
+            },
+            "common": {
+                "never": "未使用"
+            },
+            "messages": {
+                "nameRequired": "key 名を入力してください。",
+                "projectRequired": "少なくとも 1 つのプロジェクトを選択してください。",
+                "loadFailed": "API key の読み込みに失敗しました。",
+                "createFailed": "API key の作成に失敗しました。",
+                "copySuccess": "API キーをコピーしました。",
+                "copyFailed": "API キーをコピーできませんでした。",
+                "deleteFailed": "API key の削除に失敗しました。",
+                "deleteSuccess": "API キーを削除しました。",
+                "deleteConfirm": "この API key を削除しますか？この操作は元に戻せません。"
+            }
+        },
+        "account": {
+            "displayName": "表示名",
+            "displayNamePlaceholder": "表示名を入力",
+            "bio": "自己紹介",
+            "bioPlaceholder": "短い自己紹介を書いてください...",
+            "connectedAccounts": "連携済みアカウント",
+            "connected": "連携済み",
+            "notConnected": "未連携",
+            "connect": "連携する",
+            "phoneVerification": "電話番号認証",
+            "verified": "認証済み",
+            "reverify": "再認証",
+            "phonePlaceholder": "912 345 678",
+            "verify": "認証",
+            "phoneVerifiedHint": "電話番号は認証済みです。",
+            "phoneHint": "追加機能を利用するには電話番号を認証してください。",
+            "invitationCode": "招待コード",
+            "copy": "コピー",
+            "invitationHint": "このコードを友だちに共有して特典を獲得しましょう。",
+            "saving": "保存中...",
+            "saveChanges": "変更を保存",
+            "dangerZone": "危険ゾーン",
+            "deleteAccount": "アカウント削除",
+            "deleteDescription": "アカウントとすべてのコンテンツを完全に削除します。",
+            "changeAvatar": "アバター変更",
+            "uploading": "アップロード中...",
+            "removeAvatar": "削除"
+        },
+        "billing": {
+            "currentPlan": "現在のプラン",
+            "youAreOn": "現在利用中のプランは",
+            "planSuffix": "",
+            "cancelled": "解約済み",
+            "active": "有効",
+            "endsOn": "終了日",
+            "nextBillingDate": "次回請求日",
+            "credits": "クレジット",
+            "used": "{percent}% 使用済み",
+            "cancelledNotice": "サブスクリプションは解約済みで、{date} に終了します。料金ページからいつでも再加入できます。",
+            "manageSubscription": "サブスクリプション管理",
+            "upgradePlan": "プランをアップグレード",
+            "cancelTitle": "サブスクリプションを解約しますか？",
+            "cancelDescription": "現在の請求期間の終了までは引き続き利用できます。その後はプレミアム機能が使えなくなり、Free プランに戻ります。",
+            "keepSubscription": "継続する",
+            "cancelling": "解約中...",
+            "confirmCancel": "解約する",
+            "orderHistory": "注文履歴",
+            "retry": "再試行",
+            "noOrders": "まだ注文はありません"
+        },
+        "notifications": {
+            "email": "メール通知",
+            "emailDescription": "アカウントのアクティビティに関するメールを受け取ります。",
+            "marketing": "マーケティングメール",
+            "marketingDescription": "新機能やキャンペーンに関するメールを受け取ります。",
+            "projectUpdates": "プロジェクト更新",
+            "projectUpdatesDescription": "プロジェクトの生成完了時に通知を受け取ります。"
+        },
+        "appearance": {
+            "light": "ライト",
+            "dark": "ダーク",
+            "system": "システム"
+        },
+        "phoneModal": {
+            "title": "電話番号を認証",
+            "description": "{phone} に送信された 6 桁のコードを入力してください",
+            "resend": "コードを再送"
+        },
+        "plans": {
+            "free": "Free",
+            "starter": "Starter",
+            "professional": "Professional",
+            "business": "Business",
+            "plus": "Plus"
+        },
+        "common": {
+            "na": "N/A"
+        },
+        "messages": {
+            "phoneRequired": "電話番号を入力してください",
+            "phoneFormat": "電話番号は E.164 形式で入力してください（例: +886912345678）",
+            "phoneDifferent": "別の電話番号を入力してください",
+            "sendCodeFailed": "認証コードの送信に失敗しました",
+            "genericRetry": "エラーが発生しました。もう一度お試しください。",
+            "codeIncomplete": "6 桁のコードをすべて入力してください",
+            "verificationFailed": "認証に失敗しました",
+            "saveProfileFailed": "プロフィールの保存に失敗しました",
+            "uploadImageType": "画像ファイル（JPG、PNG）をアップロードしてください",
+            "uploadImageSize": "画像サイズは 5MB 未満である必要があります",
+            "imageIdFailed": "サーバーから画像 ID を取得できませんでした",
+            "uploadImageFailed": "画像のアップロードに失敗しました",
+            "uploadImageError": "画像アップロード中にエラーが発生しました",
+            "fetchOrdersFailed": "注文の取得に失敗しました",
+            "loadOrdersFailed": "注文の読み込みに失敗しました",
+            "cancelSubscriptionFailed": "サブスクリプションの解約に失敗しました",
+            "cancelSubscriptionRetry": "サブスクリプションの解約に失敗しました。もう一度お試しください。",
+            "receiptFailed": "領収書の取得に失敗しました",
+            "receiptUnavailable": "利用可能な領収書がありません",
+            "receiptOpenFailed": "領収書を開けませんでした",
+            "invoiceUnavailable": "利用可能な請求書がありません",
+            "connectGoogleFailed": "Google アカウントの連携に失敗しました",
+            "connectXFailed": "X アカウントの連携に失敗しました",
+            "accountConflict": "このアカウントは他のユーザーに連携済みです",
+            "bindingFailed": "アカウント連携に失敗しました。もう一度お試しください。",
+            "profileSaved": "プロフィールを保存しました！",
+            "codeCopied": "コードをクリップボードにコピーしました！"
+        }
+    },
+    "pricingPage": {
+        "heading": "料金",
+        "description": "お手頃な料金プランをご覧ください",
+        "billing": {
+            "monthly": "月額",
+            "yearly": "年額",
+            "yearlySavings": "年額払いで 10% お得",
+            "freeForever": "ずっと無料",
+            "billedAnnually": "年間請求額 {amount}"
+        },
+        "actions": {
+            "current": "利用中",
+            "currentPlan": "現在のプラン",
+            "getStarted": "始める",
+            "upgrade": "アップグレード",
+            "purchase": "購入する",
+            "contactUs": "お問い合わせ"
+        },
+        "plans": {
+            "free": {
+                "name": "Free",
+                "description": "AI クリエイションの体験に最適",
+                "features": {
+                    "points": "月 50 ポイント",
+                    "output": "画像 25 枚または動画 3 本",
+                    "speed": "標準生成速度",
+                    "gallery": "公開ギャラリー",
+                    "license": "CC-BY-NC ライセンス"
+                }
+            },
+            "starter": {
+                "name": "Starter",
+                "description": "本格的に制作したいクリエイター向け",
+                "compareText": "Free のすべてに加えて：",
+                "features": {
+                    "points": "月 630 ポイント",
+                    "output": "画像 315 枚または動画 45 本",
+                    "speed": "高速生成",
+                    "gallery": "プライベートギャラリー",
+                    "license": "商用ライセンス"
+                }
+            },
+            "professional": {
+                "name": "Professional",
+                "description": "プロ向けのパワーと柔軟性",
+                "compareText": "Starter のすべてに加えて：",
+                "features": {
+                    "points": "月 4,900 ポイント",
+                    "output": "画像 2,450 枚または動画 350 本",
+                    "speed": "ターボ速度",
+                    "support": "優先サポート",
+                    "license": "商用ライセンス"
+                }
+            },
+            "business": {
+                "name": "Business",
+                "description": "チームで協力しながらスケール",
+                "compareText": "Professional のすべてに加えて：",
+                "features": {
+                    "points": "月 13,300 ポイント",
+                    "output": "画像 6,650 枚または動画 950 本",
+                    "team": "チームメンバー 5 名",
+                    "workspace": "共有ワークスペース",
+                    "api": "API アクセス"
+                }
+            }
+        },
+        "messages": {
+            "upgradeSuccess": "サブスクリプションのアップグレードに成功しました！",
+            "upgradeFailed": "アップグレードに失敗しました",
+            "upgradeRetry": "アップグレードに失敗しました。もう一度お試しください。",
+            "checkoutFailed": "チェックアウトセッションの作成に失敗しました",
+            "paymentFailed": "決済の初期化に失敗しました。もう一度お試しください。",
+            "genericRetry": "エラーが発生しました。もう一度お試しください。"
+        }
+    },
+    "verifyPhonePage": {
+        "header": {
+            "phoneTitle": "電話番号を認証",
+            "otpTitle": "認証コードを入力",
+            "phoneDescription": "追加機能を利用するには電話番号を認証してください。",
+            "otpDescription": "{phone} に 6 桁のコードを送信しました。"
+        },
+        "form": {
+            "phoneLabel": "電話番号",
+            "phoneHint": "国番号を除いた電話番号を入力してください",
+            "inviteLabel": "招待コード",
+            "invitePlaceholder": "招待コードを入力",
+            "otpLabel": "認証コード"
+        },
+        "actions": {
+            "sendCode": "認証コードを送信",
+            "sending": "送信中...",
+            "skip": "今はスキップ",
+            "verifyAndContinue": "認証して続行",
+            "verifying": "認証中...",
+            "changeNumber": "番号を変更",
+            "resendIn": "{seconds} 秒後に再送可能"
+        },
+        "messages": {
+            "sendCodeFailed": "認証コードの送信に失敗しました。もう一度お試しください。",
+            "verificationFailed": "認証に失敗しました。もう一度お試しください。"
+        },
+        "footer": {
+            "trouble": "お困りですか？",
+            "contactSupport": "サポートに連絡"
+        },
+        "common": {
+            "optional": "任意"
+        }
+    }
+}

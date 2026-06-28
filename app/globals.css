@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --kiosk-bg: #fafaf8;
+  --kiosk-bg-alt: #f2f1ed;
+  --kiosk-ink: #1a1a1a;
+  --kiosk-text: #2e2e2e;
+  --kiosk-sub: #6b6b6b;
+  --kiosk-mute: #a8a8a8;
+  --kiosk-line: #d9d7d2;
+  --kiosk-line-soft: #eae8e3;
+  --kiosk-accent: #d9a88a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--kiosk-bg);
+  font-family: "Noto Sans TC", Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}

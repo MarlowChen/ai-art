@@ -1,0 +1,40 @@
+substitutions:
+  _REGION: asia-east1
+  _SERVICE: moreu-computex
+  _REPOSITORY: cloud-run-source-deploy
+  _IMAGE: moreu-demo
+  _API_BASE_URL: "https://api.moreu.ai"
+
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - --build-arg
+      - NEXT_PUBLIC_API_BASE_URL=${_API_BASE_URL}
+      - -t
+      - ${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE}:20260531-v2
+      - .
+
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - push
+      - ${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE}:20260531-v2
+
+  - name: gcr.io/google.com/cloudsdktool/cloud-sdk
+    entrypoint: gcloud
+    args:
+      - run
+      - deploy
+      - ${_SERVICE}
+      - --image
+      - ${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE}:20260531-v2
+      - --region
+      - ${_REGION}
+      - --platform
+      - managed
+      - --allow-unauthenticated
+      - --set-env-vars
+      - NEXT_PUBLIC_API_BASE_URL=${_API_BASE_URL}
+
+images:
+  - ${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE}:20260531-v2

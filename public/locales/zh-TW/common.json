@@ -1,0 +1,652 @@
+{
+    "settings": {
+        "title": "設定",
+        "language": "語言",
+        "theme": "主題",
+        "account": "帳戶",
+        "profile": "個人資料",
+        "notifications": "通知",
+        "privacy": "隱私",
+        "save": "儲存",
+        "cancel": "取消",
+        "logout": "登出"
+    },
+    "common": {
+        "loading": "載入中...",
+        "error": "發生錯誤",
+        "success": "成功",
+        "confirm": "確認",
+        "cancel": "取消",
+        "close": "關閉",
+        "save": "儲存",
+        "delete": "刪除",
+        "edit": "編輯",
+        "back": "返回",
+        "user": "使用者"
+    },
+    "nav": {
+        "home": "首頁",
+        "generate": "生成",
+        "workspace": "工作區",
+        "settings": "設定",
+        "pricing": "方案",
+        "startCreating": "開始創作",
+        "login": "登入",
+        "signup": "註冊",
+        "logout": "登出",
+        "loginTitle": "登入",
+        "loginDescription": "登入您的帳號",
+        "signupTitle": "註冊",
+        "signupDescription": "建立新帳號"
+    },
+    "sidebar": {
+        "newProject": "新專案",
+        "noProjectsYet": "尚無專案",
+        "today": "今天",
+        "yesterday": "昨天",
+        "previous7Days": "過去 7 天",
+        "older": "更早",
+        "credits": "點數",
+        "settings": "設定",
+        "supportAgent": "支援助理",
+        "logout": "登出",
+        "deleteProjectTitle": "刪除專案",
+        "deleteProjectDescription": "你確定要刪除這個專案嗎？此操作無法復原。",
+        "cancel": "取消",
+        "deleting": "刪除中...",
+        "delete": "刪除"
+    },
+    "generatePage": {
+        "heroTitle": "我可以為你創造什麼？",
+        "loadingProject": "正在載入專案...",
+        "loadingScreen": "載入中...",
+        "newProjectName": "新專案",
+        "untitledProject": "未命名專案",
+        "projectSaved": "專案已儲存！",
+        "exportingMessage": "專案已儲存，正在匯出為 {quality}...",
+        "generatedContentFallback": "已為 {mode} 生成內容：{message}",
+        "thinking": "思考中",
+        "fallbacks": {
+            "user": "使用者",
+            "creator": "創作者"
+        },
+        "errors": {
+            "createProjectFailed": "建立專案失敗，請檢查連線後再試一次。"
+        },
+        "thinkingTooltipOn": "代理模式已開啟",
+        "thinkingTooltipOff": "直接模式",
+        "modes": {
+            "image": "圖片",
+            "video": "影片",
+            "audio": "音訊",
+            "edit": "編輯"
+        },
+        "saveStatus": {
+            "saving": "儲存中...",
+            "saved": "已儲存",
+            "failed": "儲存失敗",
+            "unsaved": "尚未儲存"
+        },
+        "suggestedPrompts": {
+            "image": ["科幻驚悚電影感海報", "黑色電影風格人物肖像", "動作場景的分鏡畫面", "奇幻電影場景概念圖"],
+            "video": ["黃昏城市的電影感空拍鏡頭", "充滿戲劇性的慢動作行走鏡頭", "預告片風格蒙太奇片段", "電影感訪談打光場景"],
+            "audio": ["史詩感電影預告配樂", "緊張驚悚的背景音樂", "電影對白環境底噪", "動作場景音效設計"],
+            "default": ["替我的電影製作一支電影感預告片", "為我的電影場景生成概念圖", "為我的短片創作背景配樂", "幫我的素材做電影感調色剪輯"]
+        },
+        "inputPlaceholders": {
+            "image": ["生成一張 cyberpunk 城市插畫", "設計一個現代品牌 logo", "一位太空人的寫實人像", "奇幻風景概念圖", "夕陽海景的油畫作品"],
+            "video": ["生成一支電影感開場影片", "製作一段慢動作自然景片段", "讓角色行走動起來", "山脈空拍鏡頭", "繁忙城市街景的縮時影片"],
+            "audio": ["創作一段 Lo-fi 讀書節拍", "生成未來感音效", "為悲傷場景創作鋼琴旋律", "製作一首輕快流行曲", "為紀錄片生成旁白配音"],
+            "edit": ["幫這支影片加上字幕", "移除背景雜音", "替這段素材做調色", "剪掉靜音片段", "加上一個轉場效果"],
+            "default": ["生成一支 cyberpunk 風格開場影片", "創作一段 Lo-fi 背景音樂", "把這段片段轉成 3D 動畫", "幫我剪這支旅遊 vlog", "生成一幅超現實主義畫作"]
+        }
+    },
+    "hero": {
+        "title": "品牌內容製作的 AI ",
+        "highlightText": "代理",
+        "description": "透過 AI 驅動的工作流程，大規模建立符合品牌風格的影片與行銷素材。",
+        "buttonText": "立即開始創作",
+        "loading": "生成中..."
+    },
+    "footer": {
+        "emailPlaceholder": "輸入您的電子郵件",
+        "subscribe": "訂閱",
+        "followUs": "追蹤我們",
+        "product": "產品",
+        "pricing": "定價",
+        "tutorials": "教學",
+        "aboutUs": "關於我們",
+        "careers": "職缺",
+        "copyright": "© {year} Ai Art. 保留所有權利。",
+        "privacyPolicy": "隱私政策",
+        "termsOfService": "服務條款",
+        "cookiePolicy": "Cookie 政策"
+    },
+    "auth": {
+        "welcome": "歡迎",
+        "signInDescription": "登入或建立帳號以繼續",
+        "continueWithGoogle": "使用 Google 繼續",
+        "continueWithX": "使用 X 繼續",
+        "termsAgreement": "點擊繼續即表示您同意我們的{termsLink}和{privacyLink}。",
+        "termsOfService": "服務條款",
+        "privacyPolicy": "隱私政策"
+    },
+    "assetsPanel": {
+        "title": "專案素材",
+        "images": "圖片",
+        "videos": "影片",
+        "audio": "音樂",
+        "noImages": "尚無圖片",
+        "noVideos": "尚無影片",
+        "noAudio": "尚無音樂",
+        "hint": "生成的素材將顯示在這裡",
+        "footer": "點擊素材以插入時間軸或對話"
+    },
+    "errors": {
+        "uploadFailed": "上傳失敗",
+        "fileTooLarge": "檔案「{name}」太大。請上傳較小的檔案。",
+        "genericError": "發生錯誤，請重試。",
+        "failedToFetch": "無法取得資料",
+        "paymentFailed": "付款初始化失敗，請重試。",
+        "upgradeFailed": "升級失敗，請重試。",
+        "verificationFailed": "驗證失敗，請重試。",
+        "rateLimitExceeded": "已達每日上限，請明天再來！",
+        "serverBusy": "伺服器忙碌中，請稍後再試。",
+        "analysisFailed": "分析失敗，請重試。"
+    },
+    "agent": {
+        "manualMode": "手動模式",
+        "loadingConversation": "正在載入對話...",
+        "greeting": {
+            "morning": "早安",
+            "afternoon": "午安",
+            "evening": "晚上好",
+            "night": "晚安"
+        },
+        "intro": {
+            "line1": "我是 MoreU Director，你的 AI 影片助理。",
+            "line2": "今天想一起完成什麼？"
+        },
+        "upload": {
+            "selectedCount": "已選擇 {count} 個檔案，點擊可繼續新增",
+            "dropzoneTitle": "拖曳或點擊以上傳圖片",
+            "dropzoneHint": "支援 JPG、PNG、MP4 等格式",
+            "submit": "送出"
+        },
+        "common": {
+            "confirm": "確認",
+            "yes": "是",
+            "no": "否"
+        },
+        "fieldInput": {
+            "maxItemsAllowed": "最多只能上傳 {count} 個項目",
+            "selectedCount": "已選擇 {selected}/{total}",
+            "minItems": "最少 {min} 個項目",
+            "maxItems": "最多 {max} 個項目",
+            "minMaxItems": "最少 {min} 個 • 最多 {max} 個項目"
+        },
+        "retryGeneration": "AI 生成失敗，點擊即可重試",
+        "scriptConfirmation": {
+            "generatingTitle": "正在生成分鏡圖片...",
+            "generatingDescription": "AI 正在為每個場景生成圖片，請稍候",
+            "back": "返回",
+            "confirmedCount": "已確認 {confirmed} / {total}",
+            "confirmAndGenerate": "確認並生成分鏡",
+            "title": "確認腳本內容",
+            "description": "請確認每個場景的腳本描述",
+            "save": "儲存",
+            "cancel": "取消",
+            "edit": "編輯",
+            "confirmed": "已確認",
+            "confirm": "確認",
+            "addScene": "新增場景",
+            "goBackTitle": "要返回上一步嗎？",
+            "goBackDescription": "返回後會清除目前的腳本內容與對話紀錄，此操作無法復原。",
+            "goBack": "返回上一步"
+        },
+        "styleSelector": {
+            "preview": "預覽",
+            "confirmAndGenerate": "確認風格並生成腳本",
+            "back": "返回",
+            "title": "選擇影片風格",
+            "description": "選擇最符合你品牌調性的影片風格"
+        },
+        "stylePresets": {
+            "cinematic": {
+                "title": "電影感",
+                "description": "景深濃厚、色調電影感強烈，適合品牌形象"
+            },
+            "lifestyle": {
+                "title": "生活感",
+                "description": "自然光與真實場景，貼近日常生活"
+            },
+            "minimalist": {
+                "title": "極簡",
+                "description": "乾淨背景與產品特寫，凸顯質感"
+            },
+            "dynamic": {
+                "title": "動感",
+                "description": "快節奏剪輯與動態效果，適合社群內容"
+            },
+            "warm": {
+                "title": "溫暖情感",
+                "description": "溫暖色調與情緒敘事，更能打動人心"
+            },
+            "luxury": {
+                "title": "高級感",
+                "description": "高對比與精緻細節，展現品味"
+            }
+        },
+        "templateGallery": {
+            "select": "選擇"
+        },
+        "storyboardMode": {
+            "title": "分鏡腳本",
+            "description": "點擊文字即可編輯",
+            "previewVideo": "預覽影片",
+            "imagePreview": "圖片預覽"
+        },
+        "moreTemplates": {
+            "title": "更多模板",
+            "description": "選擇最適合你的影片類型"
+        },
+        "videoPreview": {
+            "titleDelayed": "影片生成比平常久一點",
+            "titleGenerating": "正在生成分鏡影片",
+            "titleConfirm": "確認分鏡影片",
+            "titlePrepare": "準備分鏡影片",
+            "descriptionDelayed": "部分場景仍在渲染中，我們會持續在背景處理。",
+            "descriptionGenerating": "正在為每個已確認的場景生成預覽影片。",
+            "descriptionConfirm": "請檢查每支分鏡影片，確認最後要進入剪輯的版本。",
+            "descriptionPrepare": "請先確認你要生成分鏡影片的場景。",
+            "badgeDelayed": "持續處理中",
+            "badgeGenerating": "生成中",
+            "confirmAndEdit": "確認並前往編輯",
+            "generationFailed": "影片生成失敗",
+            "cardTitleDelayed": "仍在處理中",
+            "cardTitleGenerating": "正在生成影片",
+            "cardHintDelayed": "這個場景花的時間比平常久，但我們仍在持續處理。",
+            "sceneLabel": "場景 {index}",
+            "confirmedCount": "已確認 {confirmed} / {total}",
+            "editPromptPlaceholder": "輸入新的提示詞來重新生成這支影片...",
+            "regenerateVideo": "重新生成影片",
+            "cancel": "取消",
+            "actionDelayed": "已排入重試佇列",
+            "actionGenerating": "正在生成",
+            "actionHintDelayed": "系統會自動持續重試，你可以安心離開此頁。",
+            "edit": "編輯",
+            "regen": "重試",
+            "editPromptTitle": "編輯提示詞",
+            "regenerateTitle": "重新生成",
+            "regenerate": "重新生成",
+            "confirmed": "已確認",
+            "confirmVideo": "確認影片"
+        },
+        "storyboard": {
+            "preparingVideoTitle": "正在準備生成影片...",
+            "preparingVideoDescription": "正在處理資料，請稍候",
+            "generatingTitle": "正在生成分鏡圖片",
+            "confirmTitle": "確認分鏡圖片",
+            "generatingDescription": "正在生成第 {current} / {total} 個場景{queuedSuffix}",
+            "queuedSuffix": "，另有 {count} 個排隊中",
+            "confirmDescription": "請確認每個場景的圖片",
+            "generatedCount": "已生成 {completed} / {total}",
+            "confirmedCount": "已確認 {confirmed} / {total}",
+            "confirmAndContinue": "確認並繼續",
+            "generationFailed": "生成失敗",
+            "regenerate": "重新生成",
+            "generatingFirstScene": "正在生成第一個場景...",
+            "generatingScene": "正在生成場景 {index}...",
+            "startingRender": "開始渲染分鏡",
+            "pleaseWait": "請稍候",
+            "queuedNext": "下一個排隊中",
+            "queued": "排隊中...",
+            "sceneLabel": "場景 {index}",
+            "editPromptPlaceholder": "輸入新的提示詞來重新生成...",
+            "regen": "重試",
+            "cancel": "取消",
+            "edit": "編輯",
+            "generatingNow": "正在生成",
+            "waitInLine": "其他場景會依序等待",
+            "editPrompt": "編輯提示詞",
+            "editPromptTitle": "編輯提示詞",
+            "regenerateTitle": "重新生成",
+            "confirm": "確認"
+        },
+        "steps": {
+            "PROCESSING_START": "開始處理您的影片創作...",
+            "RESOLVING_IMAGES": "正在解析 {imageCount, number} 張圖片...",
+            "IMAGES_RESOLVED": "圖片解析完成 ({resolvedCount, number} 張)",
+            "IMAGE_RESOLVE_FAILED": "圖片解析失敗: {error}",
+            "ANALYZING_INTENT": "正在分析創作意圖...",
+            "INTENT_ANALYZED": "意圖分析完成: \"{query}\"",
+            "SEARCHING_TEMPLATES": "正在搜尋參考模板...",
+            "TEMPLATES_FOUND": "找到 {templateCount, number} 個參考模板",
+            "NO_TEMPLATES": "未找到匹配模板，使用基本模式",
+            "INTENT_EMPTY": "意圖分析未返回結果，繼續處理...",
+            "RAG_WARNING": "RAG 搜尋未成功，繼續使用基本模式",
+            "AI_DECIDING": "AI 專家正在為您選擇最佳方案...",
+            "DECISION_COMPLETE": "{expert} 已為您量身定制創作方案",
+            "TASK_CREATED": "任務已建立，正在提交...",
+            "TASK_SUBMITTED": "任務已提交，等待渲染",
+            "ANALYSIS_FAILED": "分析失敗: {error}",
+            "ERROR": "發生錯誤: {error}",
+            "CLARIFICATION_NEEDED": "需要更多資訊: {info}"
+        },
+        "experts": {
+            "CINEMA_EXPERT": "電影專家",
+            "MOTION_EXPERT": "動作專家",
+            "REALISTIC_EXPERT": "寫實專家",
+            "STYLIZED_EXPERT": "風格專家",
+            "CREATIVE_EXPERT": "創意專家",
+            "AI_EXPERT": "AI 專家"
+        },
+        "status": {
+            "thinking": "分析中...",
+            "creating": "創作中..."
+        }
+    },
+    "settingsPage": {
+        "tabs": {
+            "account": "帳戶",
+            "billing": "帳單與方案",
+            "apiKeys": "API 金鑰",
+            "notifications": "通知",
+            "appearance": "外觀"
+        },
+        "header": {
+            "description": "管理你的帳戶偏好與方案資訊。",
+            "comingSoon": "即將推出"
+        },
+        "language": {
+            "description": "選擇工作區要使用的語言，我們會記住這個偏好供你下次使用。",
+            "applying": "套用中",
+            "active": "使用中",
+            "currentlyUsing": "目前實際使用：{language}"
+        },
+        "apiKeys": {
+            "title": "API 金鑰",
+            "description": "建立與管理開發者使用的 API key。",
+            "nameLabel": "金鑰名稱",
+            "namePlaceholder": "一般用途金鑰",
+            "listTitle": "目前的金鑰",
+            "listDescription": "不需要的 key 可以直接刪除，避免繼續留在帳號裡。",
+            "emptyTitle": "還沒有 API 金鑰",
+            "projectAccessLabel": "專案存取範圍",
+            "expirationLabel": "到期時間",
+            "helper": "新建立的 key 會固定使用 general preset，並預設可存取所有專案。",
+            "create": "建立 API Key",
+            "creating": "建立中...",
+            "formDescription": "建立可供伺服器端整合或內部工具使用的開發者 key。",
+            "createdTitle": "API Key 已建立",
+            "createdDescription": "請在關閉此視窗前複製並妥善保存這組 key。",
+            "shownOnce": "這組 key 只會顯示一次。",
+            "copy": "複製",
+            "copied": "已複製",
+            "delete": "刪除",
+            "done": "完成",
+            "docsCta": "查看 API 文件",
+            "deleteTitle": "刪除 API 金鑰",
+            "deleteDescription": "刪除 {name} 後，使用這組金鑰的請求會立即失效。",
+            "empty": "目前還沒有 API 金鑰。",
+            "allProjects": "所有專案",
+            "selectedProjects": "指定專案",
+            "columns": {
+                "name": "名稱",
+                "prefix": "前綴",
+                "access": "存取範圍",
+                "expires": "到期",
+                "lastUsed": "最後使用",
+                "status": "狀態",
+                "actions": "操作"
+            },
+            "preset": {
+                "general": "General API"
+            },
+            "expiration": {
+                "never": "永不過期",
+                "days7": "7 天",
+                "days30": "30 天",
+                "days90": "90 天",
+                "custom": "自訂日期"
+            },
+            "status": {
+                "active": "啟用中",
+                "expired": "已過期",
+                "revoked": "已撤銷"
+            },
+            "common": {
+                "never": "從未"
+            },
+            "messages": {
+                "nameRequired": "請輸入 key 名稱。",
+                "projectRequired": "請至少選擇一個專案。",
+                "loadFailed": "載入 API keys 失敗。",
+                "createFailed": "建立 API key 失敗。",
+                "copySuccess": "API 金鑰已複製。",
+                "copyFailed": "複製 API 金鑰失敗。",
+                "deleteFailed": "刪除 API key 失敗。",
+                "deleteSuccess": "API 金鑰已刪除。",
+                "deleteConfirm": "要刪除這組 API key 嗎？此動作無法復原。"
+            }
+        },
+        "account": {
+            "displayName": "顯示名稱",
+            "displayNamePlaceholder": "你的顯示名稱",
+            "bio": "個人簡介",
+            "bioPlaceholder": "寫一段簡短介紹...",
+            "connectedAccounts": "已連結帳號",
+            "connected": "已連結",
+            "notConnected": "尚未連結",
+            "connect": "連結",
+            "phoneVerification": "手機驗證",
+            "verified": "已驗證",
+            "reverify": "重新驗證",
+            "phonePlaceholder": "912 345 678",
+            "verify": "驗證",
+            "phoneVerifiedHint": "你的手機號碼已完成驗證。",
+            "phoneHint": "驗證手機號碼以解鎖更多功能。",
+            "invitationCode": "我的邀請碼",
+            "copy": "複製",
+            "invitationHint": "把這組邀請碼分享給朋友以獲得獎勵。",
+            "saving": "儲存中...",
+            "saveChanges": "儲存變更",
+            "dangerZone": "危險區域",
+            "deleteAccount": "刪除帳號",
+            "deleteDescription": "永久移除你的帳號與所有內容。",
+            "changeAvatar": "更換頭像",
+            "uploading": "上傳中...",
+            "removeAvatar": "移除"
+        },
+        "billing": {
+            "currentPlan": "目前方案",
+            "youAreOn": "你目前使用的是",
+            "planSuffix": "方案",
+            "cancelled": "已取消",
+            "active": "啟用中",
+            "endsOn": "到期日",
+            "nextBillingDate": "下次扣款日",
+            "credits": "點數",
+            "used": "已使用 {percent}%",
+            "cancelledNotice": "你的訂閱已取消，將於 {date} 結束。之後你仍可隨時到定價頁重新訂閱。",
+            "manageSubscription": "管理訂閱",
+            "upgradePlan": "升級方案",
+            "cancelTitle": "取消訂閱？",
+            "cancelDescription": "你的訂閱會持續到本期計費週期結束。之後將失去進階功能，並回到 Free 方案。",
+            "keepSubscription": "保留訂閱",
+            "cancelling": "取消中...",
+            "confirmCancel": "確認取消",
+            "orderHistory": "訂單紀錄",
+            "retry": "重試",
+            "noOrders": "目前還沒有訂單"
+        },
+        "notifications": {
+            "email": "Email 通知",
+            "emailDescription": "接收與帳戶活動相關的 Email。",
+            "marketing": "行銷信件",
+            "marketingDescription": "接收新功能與優惠相關的 Email。",
+            "projectUpdates": "專案更新",
+            "projectUpdatesDescription": "當你的專案生成完成時收到通知。"
+        },
+        "appearance": {
+            "light": "淺色",
+            "dark": "深色",
+            "system": "系統"
+        },
+        "phoneModal": {
+            "title": "驗證手機號碼",
+            "description": "請輸入傳送到 {phone} 的 6 位數驗證碼",
+            "resend": "重新發送驗證碼"
+        },
+        "plans": {
+            "free": "免費",
+            "starter": "入門",
+            "professional": "專業",
+            "business": "商務",
+            "plus": "Plus"
+        },
+        "common": {
+            "na": "無"
+        },
+        "messages": {
+            "phoneRequired": "請輸入手機號碼",
+            "phoneFormat": "手機號碼必須符合 E.164 格式（例如：+886912345678）",
+            "phoneDifferent": "請輸入不同的手機號碼",
+            "sendCodeFailed": "發送驗證碼失敗",
+            "genericRetry": "發生錯誤，請再試一次。",
+            "codeIncomplete": "請輸入完整的 6 位數驗證碼",
+            "verificationFailed": "驗證失敗",
+            "saveProfileFailed": "儲存個人資料失敗",
+            "uploadImageType": "請上傳圖片檔案（JPG、PNG）",
+            "uploadImageSize": "圖片大小必須小於 5MB",
+            "imageIdFailed": "無法從伺服器取得圖片 ID",
+            "uploadImageFailed": "上傳圖片失敗",
+            "uploadImageError": "圖片上傳發生錯誤",
+            "fetchOrdersFailed": "取得訂單失敗",
+            "loadOrdersFailed": "載入訂單失敗",
+            "cancelSubscriptionFailed": "取消訂閱失敗",
+            "cancelSubscriptionRetry": "取消訂閱失敗，請再試一次。",
+            "receiptFailed": "取得收據失敗",
+            "receiptUnavailable": "目前沒有可用收據",
+            "receiptOpenFailed": "開啟收據失敗",
+            "invoiceUnavailable": "目前沒有可用發票",
+            "connectGoogleFailed": "連結 Google 帳號失敗",
+            "connectXFailed": "連結 X 帳號失敗",
+            "accountConflict": "這個帳號已連結到其他使用者",
+            "bindingFailed": "帳號連結失敗，請再試一次。",
+            "profileSaved": "個人資料已成功儲存！",
+            "codeCopied": "邀請碼已複製到剪貼簿！"
+        }
+    },
+    "pricingPage": {
+        "heading": "方案",
+        "description": "查看我們實惠的定價方案",
+        "billing": {
+            "monthly": "月繳",
+            "yearly": "年繳",
+            "yearlySavings": "選擇年繳可省下 10%",
+            "freeForever": "永久免費",
+            "billedAnnually": "每年收費 {amount}"
+        },
+        "actions": {
+            "current": "目前使用中",
+            "currentPlan": "目前方案",
+            "getStarted": "立即開始",
+            "upgrade": "升級",
+            "purchase": "購買",
+            "contactUs": "聯絡我們"
+        },
+        "plans": {
+            "free": {
+                "name": "Free",
+                "description": "適合體驗 AI 創作",
+                "features": {
+                    "points": "每月 50 點",
+                    "output": "25 張圖片或 3 支影片",
+                    "speed": "標準生成速度",
+                    "gallery": "公開圖庫",
+                    "license": "CC-BY-NC 授權"
+                }
+            },
+            "starter": {
+                "name": "Starter",
+                "description": "適合開始認真創作的創作者",
+                "compareText": "包含 Free 所有功能，外加：",
+                "features": {
+                    "points": "每月 630 點",
+                    "output": "315 張圖片或 45 支影片",
+                    "speed": "快速生成速度",
+                    "gallery": "私人圖庫",
+                    "license": "商業授權"
+                }
+            },
+            "professional": {
+                "name": "Professional",
+                "description": "為專業創作者提供更高彈性與效能",
+                "compareText": "包含 Starter 所有功能，外加：",
+                "features": {
+                    "points": "每月 4,900 點",
+                    "output": "2,450 張圖片或 350 支影片",
+                    "speed": "極速生成",
+                    "support": "優先支援",
+                    "license": "商業授權"
+                }
+            },
+            "business": {
+                "name": "Business",
+                "description": "與團隊協作並擴展產能",
+                "compareText": "包含 Professional 所有功能，外加：",
+                "features": {
+                    "points": "每月 13,300 點",
+                    "output": "6,650 張圖片或 950 支影片",
+                    "team": "5 位團隊成員",
+                    "workspace": "共享工作區",
+                    "api": "API 存取"
+                }
+            }
+        },
+        "messages": {
+            "upgradeSuccess": "訂閱升級成功！",
+            "upgradeFailed": "升級失敗",
+            "upgradeRetry": "升級失敗，請再試一次。",
+            "checkoutFailed": "建立結帳流程失敗",
+            "paymentFailed": "付款初始化失敗，請再試一次。",
+            "genericRetry": "發生錯誤，請再試一次。"
+        }
+    },
+    "verifyPhonePage": {
+        "header": {
+            "phoneTitle": "驗證你的手機",
+            "otpTitle": "輸入驗證碼",
+            "phoneDescription": "驗證手機號碼以解鎖更多功能。",
+            "otpDescription": "我們已將 6 位數驗證碼發送至 {phone}。"
+        },
+        "form": {
+            "phoneLabel": "手機號碼",
+            "phoneHint": "請輸入不含國碼的手機號碼",
+            "inviteLabel": "邀請碼",
+            "invitePlaceholder": "輸入邀請碼",
+            "otpLabel": "驗證碼"
+        },
+        "actions": {
+            "sendCode": "發送驗證碼",
+            "sending": "發送中...",
+            "skip": "稍後再說",
+            "verifyAndContinue": "驗證並繼續",
+            "verifying": "驗證中...",
+            "changeNumber": "更換號碼",
+            "resendIn": "{seconds} 秒後可重新發送"
+        },
+        "messages": {
+            "sendCodeFailed": "發送驗證碼失敗，請再試一次。",
+            "verificationFailed": "驗證失敗，請再試一次。"
+        },
+        "footer": {
+            "trouble": "遇到問題？",
+            "contactSupport": "聯絡客服"
+        },
+        "common": {
+            "optional": "選填"
+        }
+    }
+}
