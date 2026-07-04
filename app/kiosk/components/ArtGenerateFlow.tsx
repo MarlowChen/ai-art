@@ -6,6 +6,8 @@ import {
   generateArtRagImage,
   getArtRagTaskStatus,
   listArtRagLibraries,
+  resolveApiMediaUrl,
+  type ArtRagStatusResponse,
 } from "../api";
 
 interface ArtGenerateFlowProps {
@@ -22,8 +24,35 @@ const PROMPT_SUGGESTIONS = [
   "海邊散步的白色洋裝人物，像雜誌封面一樣乾淨高級",
 ];
 
-function resolveCompletedImages(images?: Array<{ url?: string }>) {
-  return images?.map((item) => item?.url).filter((url): url is string => Boolean(url)) || [];
+function extractImageUrl(item: unknown) {
+  if (!item) return "";
+  if (typeof item === "string") return item;
+  if (typeof item !== "object") return "";
+
+  const image = item as {
+    url?: string;
+    originalUrl?: string;
+    externalUrl?: string;
+  };
+  return image.url || image.originalUrl || image.externalUrl || "";
+}
+
+function resolveCompletedImages(data: ArtRagStatusResponse) {
+  const candidates = [
+    ...(data.images || []),
+    ...(data.publishedImages || []),
+    ...(data.resultUrls || []),
+    ...(data.urls || []),
+  ];
+
+  return Array.from(
+    new Set(
+      candidates
+        .map(extractImageUrl)
+        .filter((url): url is string => Boolean(url))
+        .map(resolveApiMediaUrl),
+    ),
+  );
 }
 
 export function ArtGenerateFlow({ onHome }: ArtGenerateFlowProps) {
@@ -68,7 +97,7 @@ export function ArtGenerateFlow({ onHome }: ArtGenerateFlowProps) {
     try {
       const data = await getArtRagTaskStatus(task);
       if (data.status === "COMPLETED") {
-        const nextImages = resolveCompletedImages(data.images);
+        const nextImages = resolveCompletedImages(data);
         if (nextImages.length === 0) throw new Error("生成完成但沒有圖片");
         setImageUrls(nextImages);
         setStatus("生成完成");
@@ -174,11 +203,13 @@ export function ArtGenerateFlow({ onHome }: ArtGenerateFlowProps) {
         <motion.div className="kiosk-main art-flow-main art-result" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           <TitleBlock level={1} zh="已完成" en="Done." />
           <div className="art-result__grid">
-            {imageUrls.map((imageUrl, index) => (
-              <div className="art-result__image-wrap" key={`${imageUrl}-${index}`}>
-                <img className="art-result__image" src={imageUrl} alt={`Generated art result ${index + 1}`} />
-              </div>
-            ))}
+            <div className="art-result__images">
+              {imageUrls.map((imageUrl, index) => (
+                <div className="art-result__image-wrap" key={`${imageUrl}-${index}`}>
+                  <img className="art-result__image" src={imageUrl} alt={`Generated art result ${index + 1}`} />
+                </div>
+              ))}
+            </div>
             <div className="art-result__meta">
               <QRCodeMock value={imageUrls[0] || ""} caption="掃碼下載" />
               <button className="kiosk-btn kiosk-btn--primary" type="button" onClick={resetFlow}>

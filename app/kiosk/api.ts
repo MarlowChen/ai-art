@@ -37,8 +37,18 @@ export type ArtRagStatusResponse = {
   expectedCount?: number;
   images?: Array<{
     url?: string;
+    originalUrl?: string;
+    externalUrl?: string;
     id?: string;
-  }>;
+  } | string>;
+  publishedImages?: Array<{
+    url?: string;
+    originalUrl?: string;
+    externalUrl?: string;
+    id?: string;
+  } | string>;
+  resultUrls?: string[];
+  urls?: string[];
 };
 
 export function buildApiUrl(path: string) {
@@ -82,6 +92,17 @@ export async function getArtRagTaskStatus(taskId: string) {
   const data = await res.json();
   if (!res.ok) throw new Error(data.error || "Art task status failed");
   return data as ArtRagStatusResponse;
+}
+
+export function resolveApiMediaUrl(url: string) {
+  if (!url) return "";
+  if (/^https?:\/\//i.test(url) || url.startsWith("data:") || url.startsWith("blob:")) {
+    return url;
+  }
+  if (url.startsWith("/")) {
+    return `${getApiBaseUrl()}${url}`;
+  }
+  return url;
 }
 
 function getApiBaseUrl() {

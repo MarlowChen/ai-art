@@ -1611,6 +1611,7 @@ svg {
 .art-home-features,
 .art-compose__grid,
 .art-result__grid,
+.art-result__images,
 .art-generating__grid {
   width: 100%;
   display: grid;
@@ -1621,6 +1622,12 @@ svg {
 .art-compose__grid,
 .art-result__grid {
   grid-template-columns: 1fr;
+}
+
+.art-result__images {
+  width: min(100%, 980px);
+  margin: 0 auto;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .art-home-feature,
@@ -1717,9 +1724,9 @@ svg {
 }
 
 .art-result__image-wrap {
-  width: min(100%, 720px);
-  min-height: 520px;
-  margin: 0 auto;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  min-height: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1759,6 +1766,7 @@ svg {
   .art-home-features,
   .art-compose__grid,
   .art-result__grid,
+  .art-result__images,
   .art-generating__grid,
   .art-home-cta,
   .art-preview-card,
@@ -1771,7 +1779,7 @@ svg {
     align-items: flex-start;
   }
 
-  .art-result__image-wrap {
-    min-height: 360px;
+  .art-result__images {
+    grid-template-columns: 1fr;
   }
 }
