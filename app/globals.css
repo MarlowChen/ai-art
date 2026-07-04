@@ -3,15 +3,6 @@
 
 :root {
   color-scheme: light;
-  --kiosk-bg: #fafaf8;
-  --kiosk-bg-alt: #f2f1ed;
-  --kiosk-ink: #1a1a1a;
-  --kiosk-text: #2e2e2e;
-  --kiosk-sub: #6b6b6b;
-  --kiosk-mute: #a8a8a8;
-  --kiosk-line: #d9d7d2;
-  --kiosk-line-soft: #eae8e3;
-  --kiosk-accent: #d9a88a;
 }
 
 * {
