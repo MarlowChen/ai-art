@@ -28,10 +28,13 @@ export type ArtRagGenerateResponse = {
   };
 };
 
+export type ArtRagModelId = "LegnextMidjourneyV7Image" | string;
+
 export type ArtRagStatusResponse = {
   ok: true;
   taskId: string;
   status: string;
+  expectedCount?: number;
   images?: Array<{
     url?: string;
     id?: string;
@@ -61,6 +64,7 @@ export async function generateArtRagImage(input: {
   resolution?: "1K" | "2K";
   outputFormat?: "jpg" | "png";
   mode?: "auto" | "random_style" | "specified_style";
+  modelId?: ArtRagModelId;
 }) {
   const res = await fetch(`${getApiBaseUrl()}/art-rag/test-generate`, {
     method: "POST",

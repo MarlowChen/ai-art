@@ -1663,8 +1663,7 @@ svg {
   gap: 0.25rem;
 }
 
-.art-prompt-textarea,
-.art-select {
+.art-prompt-textarea {
   width: 100%;
   border: 1px solid var(--kiosk-line);
   background: var(--kiosk-bg);
@@ -1678,14 +1677,6 @@ svg {
   resize: vertical;
   line-height: 1.7;
   font-size: var(--fs-body-l);
-}
-
-.art-select-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  font-size: var(--fs-sm);
-  color: var(--kiosk-sub);
 }
 
 .art-panel__actions {

@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --webpack",
     "build": "next build",
-    "build:gh-pages": "NEXT_PUBLIC_BASE_PATH=${NEXT_PUBLIC_BASE_PATH:-${GITHUB_PAGES_BASE_PATH:-/testi}} GITHUB_PAGES_BASE_PATH=${GITHUB_PAGES_BASE_PATH:-${NEXT_PUBLIC_BASE_PATH:-/testi}} next build && touch out/.nojekyll",
+    "build:gh-pages": "NEXT_PUBLIC_BASE_PATH=${NEXT_PUBLIC_BASE_PATH:-${GITHUB_PAGES_BASE_PATH:-/ai-art}} GITHUB_PAGES_BASE_PATH=${GITHUB_PAGES_BASE_PATH:-${NEXT_PUBLIC_BASE_PATH:-/ai-art}} next build && touch out/.nojekyll",
     "start": "next start"
   },
   "dependencies": {

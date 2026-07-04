@@ -3,8 +3,10 @@ import "./globals.css";
 
 const publicBasePath = process.env.NEXT_PUBLIC_BASE_PATH || process.env.GITHUB_PAGES_BASE_PATH || "";
 const withBasePath = (assetPath: string) => `${publicBasePath}${assetPath}`;
+const siteOrigin = process.env.NEXT_PUBLIC_SITE_ORIGIN || "https://marlowchen.github.io";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteOrigin),
   title: "Ai Art",
   description: "Ai Art interactive AI experiences.",
   applicationName: "Ai Art",
