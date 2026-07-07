@@ -1,7 +1,12 @@
+"use client";
+
+import { useState } from "react";
 import { motion } from "motion/react";
-import { ArrowRight } from "lucide-react";
-import { KioskHeader, S } from "./KioskShared";
 import { publicAsset } from "../publicAsset";
+import { KioskHeader, KioskFooter, Modal, AboutContent, TermsContent } from "./KioskShared";
+
+const HOST_LOGO_SRC = publicAsset("/logo.PNG");
+const POSTER_SRC = publicAsset("/post.jpg");
 
 export type AppScreen = "home" | "art";
 
@@ -9,55 +14,84 @@ interface HomeScreenProps {
   onSelect: (screen: AppScreen) => void;
 }
 
-const MOREU_WORDMARK_URL = publicAsset("/art-logo.png");
-
 export function HomeScreen({ onSelect }: HomeScreenProps) {
+  const [modal, setModal] = useState<null | "about" | "terms" | "poster">(null);
+
   return (
-    <div className="kiosk-screen art-home-screen">
-      <KioskHeader />
+    <div className="kiosk-screen">
+      <KioskHeader sectionLabel="AI Artwork Model" logoSrc={HOST_LOGO_SRC} />
+      <div className="kiosk-topbar" />
 
-      <div className="kiosk-main art-home-main">
-        <section className="art-home-hero">
-          <div className="kiosk-title-block kiosk-home-brand art-home-brand">
-            <h1>
-              <img src={MOREU_WORDMARK_URL} alt="Ai Art" />
-            </h1>
-            <p className="en">Prompt in. Art out.</p>
-          </div>
-
-          <div className="art-home-copy">
-            <h2>輸入一句話，生成一張圖。</h2>
-          </div>
-        </section>
-
-        <motion.button
-          className="art-home-cta"
-          onClick={() => onSelect("art")}
-          whileHover={{ y: -3 }}
-          whileTap={{ scale: 0.985 }}
-          transition={{ duration: 0.18, ease: "easeOut" }}
-          aria-label="開始藝術生成"
+      <div className="kiosk-main">
+        <motion.section
+          className="home home--with-media"
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: [0.22, 0.61, 0.36, 1] }}
         >
-          <div className="art-home-cta__body">
-            <span>開始生成</span>
+          <div className="home__copy">
+            <p className="home__label">碳矽之間 · 專屬藝術模型</p>
+            <h1 className="home__title">在這裡，每個人<br />都是創作者</h1>
+            <p className="home__en">Here, every visitor becomes a creator.</p>
+            <p className="home__sub">輸入一句話，讓想像成形 <em>Prompt in, art out.</em></p>
+            <p className="home__lede">
+              只需一句文字、一個念頭，甚至一個尚未成形的概念，人工智慧便將抽象的語言轉化為具體的影像。這場共創，關於創作、真實與存在。
+            </p>
+
+            <div className="home__actions">
+              <motion.button className="cta" onClick={() => onSelect("art")} whileHover={{ y: -3 }} whileTap={{ scale: 0.99 }}>
+                開始共創
+                <span className="en">Start Creating</span>
+                <svg className="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.3}>
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </motion.button>
+            </div>
+
+            <div className="home__links">
+              <button className="ghost" onClick={() => setModal("about")}>
+                關於這件作品 <span style={{ fontFamily: "var(--serif-en-body)", fontStyle: "italic" }}>· About</span>
+              </button>
+              <span aria-hidden>·</span>
+              <button className="ghost" onClick={() => setModal("terms")}>
+                使用條款與著作權聲明 <span style={{ fontFamily: "var(--serif-en-body)", fontStyle: "italic" }}>· Terms</span>
+              </button>
+            </div>
+
+            <p className="home__consent">
+              已同意使用條款 <span style={{ fontFamily: "var(--serif-en-body)", fontStyle: "italic" }}>· Terms agreed</span>
+            </p>
           </div>
-          <ArrowRight size={22} strokeWidth={1.4} aria-hidden />
-        </motion.button>
+
+          <aside className="home__media" aria-label="展覽主視覺">
+            <button className="home__poster" type="button" onClick={() => setModal("poster")} aria-label="放大查看展覽海報">
+              <img src={POSTER_SRC} alt="碳矽之間展覽主視覺" />
+              <span className="home__poster-hint">點選放大 · View</span>
+            </button>
+          </aside>
+        </motion.section>
       </div>
 
-      <footer className="kiosk-footer art-home-footer">
-        <p
-          style={{
-            fontFamily: S.sans,
-            fontSize: "var(--fs-sm)",
-            color: "var(--kiosk-mute)",
-            margin: 0,
-            textAlign: "center",
-          }}
-        >
-          Tap to begin
-        </p>
-      </footer>
+      <KioskFooter onTerms={() => setModal("terms")} />
+
+      {modal === "about" && (
+        <Modal onClose={() => setModal(null)}>
+          <AboutContent onStart={() => { setModal(null); onSelect("art"); }} />
+        </Modal>
+      )}
+      {modal === "terms" && (
+        <Modal onClose={() => setModal(null)}>
+          <TermsContent onClose={() => setModal(null)} />
+        </Modal>
+      )}
+      {modal === "poster" && (
+        <div className="poster-lightbox" role="dialog" aria-modal="true" aria-label="展覽海報放大檢視" onClick={() => setModal(null)}>
+          <button className="poster-lightbox__close" type="button" onClick={() => setModal(null)} aria-label="關閉海報">
+            ×
+          </button>
+          <img src={POSTER_SRC} alt="碳矽之間展覽海報" onClick={(event) => event.stopPropagation()} />
+        </div>
+      )}
     </div>
   );
 }
