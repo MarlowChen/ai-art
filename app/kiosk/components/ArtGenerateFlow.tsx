@@ -2,7 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
-import { KioskHeader, BackButton, QRCodeMock, surgeParticles } from "./KioskShared";
+import { QRCodeSVG } from "qrcode.react";
+import { KioskHeader, BackButton, surgeParticles } from "./KioskShared";
 import { publicAsset } from "../publicAsset";
 import {
   generateArtRagImage,
@@ -36,6 +37,20 @@ function extractImageUrl(item: unknown) {
   const img = item as { url?: string; originalUrl?: string; externalUrl?: string };
   return img.url || img.originalUrl || img.externalUrl || "";
 }
+
+function imageDedupeKey(url: string) {
+  try {
+    const parsed = new URL(url, typeof window !== "undefined" ? window.location.href : "https://local.invalid");
+    return `${parsed.origin}${parsed.pathname}`;
+  } catch {
+    return url.split("?")[0].split("#")[0];
+  }
+}
+
+function canQrDownload(url: string) {
+  return /^https?:\/\//i.test(url);
+}
+
 function resolveCompletedImages(data: ArtRagStatusResponse) {
   const candidates = [
     ...(data.images || []),
@@ -43,9 +58,19 @@ function resolveCompletedImages(data: ArtRagStatusResponse) {
     ...(data.resultUrls || []),
     ...(data.urls || []),
   ];
-  return Array.from(
-    new Set(candidates.map(extractImageUrl).filter((u): u is string => Boolean(u)).map(resolveApiMediaUrl)),
-  );
+  const seen = new Set<string>();
+  const images: string[] = [];
+  for (const candidate of candidates) {
+    const rawUrl = extractImageUrl(candidate);
+    if (!rawUrl) continue;
+    const resolvedUrl = resolveApiMediaUrl(rawUrl);
+    const key = imageDedupeKey(resolvedUrl);
+    if (seen.has(key)) continue;
+    seen.add(key);
+    images.push(resolvedUrl);
+    if (images.length >= 4) break;
+  }
+  return images;
 }
 
 const fadeIn = { initial: { opacity: 0, y: 14 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.6 } };
@@ -57,6 +82,7 @@ export function ArtGenerateFlow({ onHome }: ArtGenerateFlowProps) {
   const [elapsed, setElapsed] = useState(0);
   const [status, setStatus] = useState(STAGES[0]);
   const [error, setError] = useState("");
+  const [selectedImageUrl, setSelectedImageUrl] = useState("");
   const [loadingLibraries, setLoadingLibraries] = useState(true);
   const [submitting, setSubmitting] = useState(false);
   const pollRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -144,6 +170,7 @@ export function ArtGenerateFlow({ onHome }: ArtGenerateFlowProps) {
     if (pollRef.current) clearTimeout(pollRef.current);
     setStep("compose");
     setImageUrls([]);
+    setSelectedImageUrl("");
     setElapsed(0);
     stageRef.current = 0;
     setStatus(STAGES[0]);
@@ -213,15 +240,46 @@ export function ArtGenerateFlow({ onHome }: ArtGenerateFlowProps) {
             <div className="result__grid">
               <div className={`result__gallery${imageUrls.length > 1 ? " result__gallery--multi" : ""}`}>
                 {imageUrls.map((imageUrl, index) => (
-                  <div className="result__frame" key={`${imageUrl}-${index}`}>
+                  <button
+                    className="result__frame"
+                    key={`${imageUrl}-${index}`}
+                    type="button"
+                    onClick={() => setSelectedImageUrl(imageUrl)}
+                    aria-label={`放大查看生成作品 ${index + 1}`}
+                  >
                     <img src={imageUrl} alt={`Generated artwork ${index + 1}`} />
                     {index === 0 && <div className="result__cap">“{prompt.length > 42 ? prompt.slice(0, 42) + "…" : prompt}”</div>}
-                  </div>
+                  </button>
                 ))}
               </div>
               <div className="result__meta">
                 <p className="result__q">也許答案不在於誰完成了作品，<br />而在於誰提出了問題、做出了選擇，<br />誰賦予作品意義。</p>
-                <QRCodeMock value={imageUrls[0] || ""} />
+                <div className="result__downloads">
+                  <div className="result__downloads-head">
+                    <b>掃碼下載作品</b>
+                    <span>每張圖各自掃描 · Scan each artwork</span>
+                  </div>
+                  <div className="result__download-grid">
+                    {imageUrls.map((imageUrl, index) => (
+                      <div className="result__download" key={`download-${imageUrl}-${index}`}>
+                        <button type="button" className="result__download-preview" onClick={() => setSelectedImageUrl(imageUrl)}>
+                          <img src={imageUrl} alt={`Artwork ${index + 1} preview`} />
+                          <span>{String(index + 1).padStart(2, "0")}</span>
+                        </button>
+                        <div className="result__download-qr">
+                          {canQrDownload(imageUrl) ? (
+                            <QRCodeSVG value={imageUrl} size={160} level="M" marginSize={1} />
+                          ) : (
+                            <span>無法產生 QR</span>
+                          )}
+                        </div>
+                        <a className="result__download-link" href={imageUrl} target="_blank" rel="noreferrer" download>
+                          下載第 {index + 1} 張
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+                </div>
                 <button className="gen-btn" onClick={reset}>
                   <svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.4}>
                     <path d="M4 12a8 8 0 018-8 8 8 0 016.9 4M20 12a8 8 0 01-8 8 8 8 0 01-6.9-4M4 6v4h4M20 18v-4h-4" />
@@ -233,6 +291,15 @@ export function ArtGenerateFlow({ onHome }: ArtGenerateFlowProps) {
           </motion.div>
         )}
       </div>
+
+      {selectedImageUrl && (
+        <div className="result-lightbox" role="dialog" aria-modal="true" aria-label="生成作品放大檢視" onClick={() => setSelectedImageUrl("")}>
+          <button className="result-lightbox__close" type="button" onClick={() => setSelectedImageUrl("")} aria-label="關閉作品">
+            ×
+          </button>
+          <img src={selectedImageUrl} alt="生成作品放大檢視" onClick={(event) => event.stopPropagation()} />
+        </div>
+      )}
     </div>
   );
 }
